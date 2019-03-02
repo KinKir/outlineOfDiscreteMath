@@ -1,0 +1,749 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww19600\viewh15800\viewkind1
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 An Outline of Discrete Mathematics for the Undergrad Computer Science Student\
+\
+\
+TABLE OF CONTENTS\
+\
+Chapter 1: Logic\
+	Propositional Logic\
+	Predicate Logic\
+Chapter 2: Proofs, Arguments, and Theorems\
+Chapter 3: Sets\
+Chapter 4: Functions\
+Chapter 5: Relations\
+Chapter 6: \
+\
+\
+\
+Introduction\
+Discrete math is a survey of many different areas of mathematics not covered by the usual series of calculus classes required of an engineering student. Since it is a survey it uses an overwhelming number of conventional symbols that have been adopted over the centuries by mathematicians. You will be reading a paper that was set using a popular free typesetting tool called Latex that is nearly universally used by scientists, engineers and mathematicians to publish papers. At times in this paper you will see references to backslashed sequences like \\forall, \\element, etc. These are references to the plaintext markups that are used in Latex in case you want to begin using that tool. For anyone who aspires to graduate school it is a requirement.\
+\
+\
+While the intent of this material is to be as purely formal as possible, it is necessary to make the course easier to make some assumptions of prior knowledge even before it is formally introduced. For example the section on logic assumes the reader is already familiar with all secondary school math including the concepts of integer versus real numbers and the basic rules of algebra.\
+\
+\
+Chapter 1\
+Logic\
+\
+proposition: a declarative sentence which is true or false, but not both. Also called a statement.\
+\
+Note that sentences with ambiguous antecedents are not propositions.\
+compound proposition: a proposition that can be decomposed into atomic propositions with logical connectives. Schaum's represents a abstract compound proposition P with atomic propositions p,q,r, etc as P(p,q,r,...). \
+\
+\
+\
+Basic logical connectives: AND (conjunction), OR (disjunction), NOT (negation). These are usually used as infix operators.\
+\
+Note difference between inclusive and exclusive disjunction.\
+Note how you can always negate a natural language proposition by prepending the phrase, "it is not the case that..." followed by the original proposition.\
+\
+Symbolic logic: a logic that assigns variables to propositions instead of using the natural language sentences. The translation of natural language statements into symbolic logic can be very challenging. Lowercase letters starting with p are used to represent atomic propositions. Compound propositions are sometimes written as capital letters starting with P. Compound propositions are usually called logical expressions. A convention for introducing the symbolic form of a natural language atomic proposition is with a colon:\
+\
+p: Roses are red\
+q: Violets are blue\
+\
+or a compound proposition\
+\
+S1: (Roses are red) AND (Violets are blue)\
+\
+A truth table is a tabular summary of the truth value of a proposition given the truth values of the atomic propositions. Note that the truth value of a compound proposition is uniquely determined by the truth values of the atomic propositions and the logical connectives.\
+\
+Note that the order of the rows should follow some pattern.\
+\
+The evaluation of a compound proposition requires that you work from inside parentheses and proceed outward working from left to right. This can create an excessive number of parentheses and these can be reduced by adopting an order of precedence for the logical connectives. Here are the rules of precedence for the three fundamental connectives: parentheses > negation > conjunction > disjunction.\
+\
+When evaluating some propositions the truth value of the expression can always evaluate to either true or false. If the proposition always evaluates to true, it is called a tautology. If the proposition always evaluates to false, it is called a contradiction. A proposition whose truth value depends upon the truth values of the atomic propositions is called contingent. \
+\
+\
+Logical Implication\
+Conditional  (logical implication) and Bi-conditional statements and their logical operator\
+Note the difference between implication and causation.\
+If this (the antecedent), then that (consequent) (truth table illustration)\
+If and only if this than that.\
+\
+Note that the only evaluation of implication that gives false is when the antecedent is true but the consequent is false. It is true in the other three cases. \
+\
+Bi-conditional is the compound logical expression a->b and b->a, written a<->b. It is read if and only if and often abbreviated as iff. \
+\
+\
+Conditional, Inverse, Converse, Contrapositive\
+conditional: p>q\
+inverse: q>p\
+converse: ~p>~q\
+contrapositive: ~q>~p\
+\
+How many logical connectives can exist? An exercise in counting. Why do we not see more of these? Functional Completeness.\
+\
+\
+Equivalence symbol\
+\
+Two distinct propositions may evaluate to the same truth value for each combination of the atomic truth values. These two propositions are said to be logically equivalent or simply equivalent. \
+\
+A valid proof of equivalence of two expressions is to show that their truth tables give matching columns.\
+\
+Here are the most common equivalences and their names\
+Table 1.1\
+idempotent\
+associative\
+commutative\
+distributive\
+identity\
+involution\
+complement\
+DeMorgans\
+\
+\
+\
+\
+Note the logical equivalence of the conditional and the expression using only negation and either conjunction or disjunction.\
+\
+Using the rule of substitution, we can use the rules of equivalence to give us an algebra of propositional logic. Any equivalence rule gives us an alternative way to write the expression that preserves the truth value. Note that in a truth table any two propositions will have identical columns in a truth table. In general while a truth table can be used to show equivalence, once you have more than 4 atomic propositions proving that two expressions are equivalent is more easily done with algebra than with truth tables.\
+\
+argument: a set of propositions (premises) that is asserted to result in another proposition (conclusion). We formalize this to "prove" things. We say that an argument is valid when the conclusion is true whenever all the premises are true. An argument which is not valid is said to be a fallacy. A valid argument where all the premises are true is said to be sound.\
+\
+We can write this in two ways:\
+Let P1, P2, P3, etc be a set of axioms and let Q be the conclusion\
+\
+sentential, and this is equivalent to the logical statement\
+P1 ^ P2 ^ P3^ ... |- Q\
+and sometimes it is written as P1, P2, P3, ... |- Q where the conjunction is understood.\
+\
+or \
+\
+P1\
+P2\
+P3\
+______\
+therefore Q\
+QED\
+\
+QED is short for Quod Erat Demonstrandum which means "that which was to be demonstrated. In typeset material the QED is often replaced with a black square.\
+\
+There are a set of arguments that are used so often they have been given names. For example \
+\
+p, p -> q, |- q \
+\
+is known as Modes Ponens. These common arguments are summarized in Table 1.2: Rules of Inference. Note you are always free to create a new rule of equivalence.\
+\
+Modus Ponens\
+Modus Tolens\
+\
+Proof\
+A proof is an argument such that it accepts a certain number of propositions (axioms) which are taken to be true and using valid rules of inference and rules of equivalence results in stating the conclusion. To be a valid proof each line in the proof must be either an axiom or it must be supported by some rule of equivalence or inference. All students begin writing proofs by exhaustively showing the rules they used in a line-by-line format. But as you become more sophisticated you are allowed to skip steps that you assume the reader can follow. However if challenged you must always be prepared to give the step-by-step explanation of the reasoning.\
+\
+\
+What Can You Assume in Writing a Proof?\
+Students new to the formalism of mathematics can become confused as to what logical steps do not need support. In general for this class you can assume that everything you learned in secondary school can be used without support. Within a week (for the summer session) you can begin to drop the simplest logical steps and combine them. If there is doubt that the reader (your grader) will be able to see the steps you took to get to your conclusion, it is always ok to over simplify. And if you are unsure of the steps, it is always helpful to over simplify since the grader can point to the specific step you took which was invalid.\
+\
+\
+Vacuous Proof\
+If no element of the domain exists to satisfy the antecedent, the implication is true vacuously.\
+\
+\
+Simple Deductive Proofs: direct, indirect, by contradiction\
+Many properties of mathematics are stated If x then y. This is a simple conditional statement and we know from the truth table that the CONDITIONAL STATEMENT will be true in all cases EXCEPT when the antecedent is true and the consequent is false. This makes it easy to prove since we can assume the antecedent is true (why) and then show through a series of logical steps that the consequent must follow from the antecedent. \
+\
+Direct Proofs\
+Prove: The sum of two even numbers is even\
+Proof (direct proof):\
+def: an even number can be expressed as 2*some integer\
+def: an odd number can be expressed as 2*some integer plus 1\
+Let n,m be the two even numbers (premise given)\
+Then n=2*k and m=2*j where k and j are integers (def of even)\
+Then n+m=2*k + 2*j (basic law of arithmetic)\
+Then n+m=2*(k+j) (associative law of arithmetic)\
+Then n+m is even (def of even)    QED\
+\
+Indirect Proofs\
+Many proofs can be difficult to prove directly. But sometimes they are easier to prove using the contrapositive statement of the proof. This is just one common example of what is called an indirect proof. Recall that the contrapositive is the logical equivalent of any conditional statement. If you can prove the contrapositive, you have proven the conditional.\
+\
+Proof by Contradiction\
+Not all proofs are given in the form of a conditional. Sometimes it is a direct assertion. Sometimes these statements can be proven using a technique called proof by contradiction or reducto absurdum. Do not confuse this with contrapositive. A contrapositive is the proof of a conditional statement while proof by contradiction is usually not. Proof by contradiction depends upon some basic truths of logic. A proposition must be either true or false, there is no other choice. This is called the law of the excluded middle. So if you can show that a statement MUST be false, then it must be true. How do you show that a statement must be false? If the statement can be restated as a contradiction, then it is false. \
+\
+The most famous example of a proof by contradiction is that the square root of 2 is irrational.\
+\
+Def: a rational number is one that can be expressed as the division of two integers\
+Def: all numbers that cannot be expressed as rational are irrational\
+\
+Prove: The square root of 2 is irrational\
+Proof (by contradiction)\
+Assume the square root of 2 is NOT irrational.\
+Then the square root of 2 would be rational\
+Then the square root of 2 could be expressed as the quotient of two integers.\
+Let the square root of 2 be expressed as the rational number n/m (def rational)\
+Then m*root 2 = n\
+Then m**2 * 2 = n**2\
+???\
+\
+\
+Propositional Functions, Predicates\
+Recall that propositions that do not have a defined antecedent are not technically propositions. But once the antecedent is defined they can be evaluated for their truth value. We write this like a function call.\
+open sentence, logical variable, not bound by a value.\
+\
+P(x is positive), P: is positive\
+Q(x is an integer), Q: an integer\
+S(x>y)\
+Note how this can be used to express the presence or possession of a property by the variable.\
+\
+This marks the leap from propositional logic to predicate logic (predicate calculus). Here we can use variables that are not themselves propositions but can be made into propositions. When you write a Boolean expression in a programming language, you use many variables that are not of type Boolean. But by using comparison operators you convert them into Boolean values. We will revisit this when we discuss relations and functions.\
+\
+Universal and Existential Quantifier\
+Often we wish to make a logical statement about a set of objects and not just a single instance. For example if we are talking about positive integers, we may want to assert that adding two positive integers will always give us another positive integer. We can symbolically say that using the universal quantifier \\forall. \
+\\forall positive integers x,y, P(x+y).\
+\
+The universal quantifier applies to some implied collection of things that is called the domain of discourse. When the universal quantifier is used, the property is asserted for all members in the domain of discourse. When the existential quantifier is used, it is asserted for at least one member of that domain.\
+\
+Other times we only wish to assert that there is some member of a set that will posses a property. We may want to say that there is some member of the set of integers that is positive.\
+\\exists integer x, P(x)\
+This can mean "there is a..." or "there are ..." or "for some..." or "for at least one...".\
+\
+A common additional quantifier is the uniqueness quantifier !\\exists\
+\
+Nesting of quantifiers and scope \
+Note that a variable may be free, not bound to any quantifier or be bound. When a variable is bound within a sub-expression, that same variable is free outside that expression.\
+\
+Negation of quantified expressions\
+Note how negating a quantified expression changes the meaning.\
+It is not the case that all math majors are female\
+It is not the case that if x is a math major that x is female\
+There exists some x such that it is not the case that if x is a math major x is female.\
+Symbolically this is M:math major, F:female\
+!\\forall x, M(x) -> F(x) equiv \\exist x, !(M(x) -> F(x))\
+\
+DeMorgans for quantified expressions.\
+\
+\
+\
+\
+\
+\
+Chapter 2, Sets and Naive Set Theory\
+This is only an introduction to formal set theory.\
+\
+A set is defined as an unordered collection. There is no requirement beyond that. They may be presented in any order. \
+Note that \{a, b\} is the same as \{b, a\}\
+\
+Note: Any two members that are equal only count as one member. Duplicates do not count.\
+\
+Sets can be defined by listing the members or elements of a set between braces with commas used to separate the members. This is called set enumeration. \
+\
+We say that an item is a member of a set or not a member of a set.\
+\
+If two sets have the same elements they are equal. \
+If \\forall a \\in A -> a \\in B  and \\forall b \\in B, b \\in A, then A=B\
+\
+Proof:\
+\
+\
+Sets are usually named with capital letters while the members of a set are named with lower case letters. \
+\
+\
+Subsets, Proper Subsets\
+If a set is composed of elements of another set, we call the new set a sub-set. The subset may have all the same elements as the first set. If it has fewer elements, we may call it a proper sub-set.\
+\
+Theorem: Iff A is a subset of B and B is a subset of A, then A=B\
+\
+Disjoint sets have no members in common.\
+\
+\
+Set Comprehension \
+Another way of defining a set is to describe some property that every member of the set may have. (The set of US cities). When we use logic to define a set this way we write \
+\
+\{a | a is a positive integer\} \
+\
+or even \
+\
+E: is even\
+A= (a | E(a)\}\
+We read this as \
+Set A is defined as the set of all a such that a is even. The vertical bar is "such that". To the left are the variables that represent the set members and to the right is the condition that all members must satisfy.\
+\
+Example: A = \{x | x is an odd positive integer, x<10\}\
+\
+Note implied conjunction.\
+\
+Special Sets\
+Some sets are so commonly used that we have conventions to quickly refer to them. \
+The special font conventionally used in typesetting is called Fraktur. \
+\
+N  Natural Numbers (counting numbers often not including zero)\
+Z  Integers (Zahlen in German), positive and negative including zero\
+Q  Rational numbers\
+R  Real numbers\
+C  Complex numbers\
+B  Binary symbols \{0,1\}\
+\
+Variations\
+\
+B8  Set of 8 binary symbols \{00000000, 00000001, 00000010, etc\}\
+\
+Universal and Null Sets\
+Any set with an understood domain of discourse has a set that contains all elements of that domain and it is called the universal set, symbol U.\
+\
+Any set that has no members is called the null set and has a special symbol \\null. \
+\
+Theorems\
+For any set S, \
+\\null \\subset S\
+S \\subset U\
+\\null is unique\
+\
+Set Operators\
+Union, Intersection\
+Def: A \\cup B=\{x:x \\in A or x \\in B\}\
+Def: A \\cap B = (x:x \\in A and x \\in B\}\
+Theorem:\
+If two sets are disjoint, A \\cup B = \\null\
+Def: set complement\
+A^C or A \\bar is called a set complement. It is all elements of the universal set which are not contained in the set A.\
+\
+relative complement or set difference\
+\
+symmetric difference\
+\
+\
+Graphic Representation of Sets, Venn Diagrams\
+\
+Proofs using Venn Diagrams\
+\
+\
+\
+Set operators give identities that can be proven. The following are a list of the most basic identifies and the names they are given. Any of these can be proven using the formal definition of the operator and the rules of equivalence and inference from logic.\
+\
+Table 2.1\
+idempotent\
+associative\
+cumulative\
+distributive\
+identity\
+involution\
+complement\
+DeMorgan's\
+\
+Principle of Duality\
+Note the similarity of Table 1.1 and 2.1. This is no accident but instead is a fundamental point that is explored in more detail in the math course, Abstract Algebra. One fact that should be noted is the Principle of Duality.\
+\
+\
+Sets of Sets\
+Sets can contain any type of elements, including other sets.\
+\
+Set Cross Product\
+pairs, tuples\
+The cross product of two sets is a set of pairs. The cross product of more than two sets is a set of tuples. \
+Note the elements of a tuple are ordered. (a , b) is not the same as (b, a)\
+\
+Cross products of sets to themselves can be represented with superscripts.\
+\
+Powerset\
+A special set called the power set is that set which includes every possible and unique subset of some set S. \
+Note: the easiest way to enumerate the subset is by cardinality. List all the subsets of cardinality zero (only one, the null set). Then all the subsets of size 1, 2, etc. \
+If the size of set S is m, there are 2**m such subsets.\
+\
+Special symbol P, P(A) designates the power set of set A.\
+\
+Note, the powerset IS A SET\
+\
+\
+Generalized Set Operations and Indexed Sets/Indexed Classes of Sets\
+When many sets are joined or intersected, we introduce an indexed notation:\
+\
+ Asub1 U Asub2\
+\
+\\cup _\{ i=1\} ^ n a _\{i\}\
+\
+\\cap_\{ i=1\} ^ n a _\{i\}\
+\
+\
+(give Venn diagram)\
+\
+\
+Fundamental Products of Sets\
+Consider a set of sets A_1, A_2, etc that are all unique. \
+Now let A_i^* mean either A_i or the complement of A_i.\
+(state formula)\
+\
+Note:\
+there are m sets, 2^n such fundamental products (why?)\
+any two fundamental products are disjoint\
+the union of all the fundamental products is the universal\
+\
+\
+Partitions of a Set\
+Any finite set can be constructed from a set of subsets which are nonempty and mutually disjoint. The subsets define a partition of the set\
+\
+\
+\
+\
+\
+\
+Chapter 3: Functions\
+You were introduced to functions in your secondary school education. Square root, log, sin, etc are all examples of well known functions. But let us look at what a function is.\
+\
+A basic property of functions is that they take an argument and give a unique result. The argument is  drawn from some set which is called the domain of the function while the result must be a member of some other set called the co-domain. This is expressed using this notation:\
+\
+f:S->T\
+The function f is a function that takes an argument from the set S and gives a result from the set T. S is the domain and T is the co-domain.\
+\
+For function application we typically write f(s)=t and can define the function using this notation. For example the function f might double the argument and add one which can be expressed as:\
+\
+f(x) = 2*x + 1\
+\
+When x is bound to a value, it results in a maplet from a member of the domain to some member in the codomain.\
+\
+f(2)=5\
+or maplet 2|->5\
+\
+For finite functions note that a function can be fully defined just by listing all the maplets of the function.\
+\
+A total function is one that has a maplet for every element in the domain. These are called well defined functions. Some functions are undefined for some elements in the domain and these are called partial functions. Note that division on two numbers is a partial function. It is represented by an line through the arrow from domain to co-domain.\
+\
+Not every element in the co-domain may be the image of an element in the domain. The set of all images is called the scope of the function.\
+\
+\
+Composition of Functions\
+\
+Properties of Functions: Onto, One-to-One, One-to-One Correspondence, Invertible\
+An invertible function is called a permutation\
+\
+Elementary Functions Used in Computer Science and Engineering\
+exponential and logarithmic, floor and ceiling, integer and absolute value, remainder function (MOD operator in programming), integer to binary and binary to integer, from natural numbers to integers.\
+\
+\
+Graphic Representations of Functions: Set mappings and analytic geometry\
+\
+Sequences\
+Consider a function sigma:N->Z\
+For example sigma(x)=2*x\
+this gives maplets 1|->2, 2|->4, etc\
+Since the domain is understood to be natural numbers it is easier to just write the images as a list:\
+2,4,6,8, etc\
+We can use subscript notation and state this more abstractly:\
+\
+A sequence A is a(1),a(2),a(3),...a(i) \
+or\
+\{a(n) n \\in N\}  or even more compactly as \{a(n)\} when it is understood we intend a sequence. It is common in sequences to base not strictly on natural numbers but natural numbers plus the member zero. \
+\
+\
+Sigma Notation, Summations and Closed Form Formulas\
+One common function performed on sequences is summation. For this we use the capital sigma. \\Sigma_\{j=1\}^\{n\} a_j = a_1 + a_2+ +++ a_n\
+\
+It may start at something other than 1 and may sum to infinity. The letter j is called the dummy index or dummy variable.\
+\
+\
+\
+Strings\
+A sequence may not have a numeric co-domain but may map to some arbitrary set of symbols. The set of English letters can be the co-domain and have a mapping of 1>A, 2>B, ... 26>Z. The ASCII character set is one such mapping. These sequences may be lists separated by commas such as this sequence of two letter combinations:\
+\
+aa, ab, ac, ad, ... , zy, zz\
+\
+but when there is no ambiguity, when each symbol used is unique, the commas can be dropped. This strings such as English words can be considered strings. This gives the concept of arrays indexed by integers. \
+\
+Strings take special notation. The string that contains no elements is the null string, represented by a lower case lambda. A string may be referred to as a word\
+Kleene Star notation.\
+\
+\
+Indexed Classes of Sets\
+Let I be any nonempty set (not necessarily a numeric set), and let S be a collection of sets. An indexing function from I to S is a function f:I>S. For an i \\in I, we denote the image f(i) by A_i. Thus we can say:\
+\
+\{A_i : i \\in I\} or \{A_i\}_i\\in I, or simply \{A_i\}\
+\
+The set I is called the indexing set and the elements of I the indices. \
+\
+\
+Evaluation of Functions\
+Some functions are trivially evaluated.\
+\
+f(x)=2*x\
+\
+Others will have values that must be calculated\
+\
+f(x)=sin(x)\
+\
+The way a value is assigned to a function by calculation is the starting point for computer science and leads to a discussion of algorithms we will take up later.\
+\
+\
+Growth of Functions and Asymptotic Notation\
+You know that some functions "grow" faster than others. For example you know that a quadratic polynomial will overtake a linear polynomial. But many linear functions will evaluate to higher numbers for small values. We want some way to express the concept that a quadratic is in some sense bigger. This leads to a new notation, the Big-O or asymptotic notation.\
+\
+While it may be true that some functions on n may evaluate to larger numbers for smaller values, there will be a point at which the "bigger" function will overtake and forever remain larger. Let us call this point n sub zero. If we can find some n sub zero such that all higher values of n will remain larger, we have demonstrated that the function is in this sense "larger".\
+\
+Given two linear polynomial equations, we can always do this by changing the values of the constants. But no matter how you change the constants of a linear polynomial, a quadratic polynomial will always overtake it. This shows that a quadratic will ALWAYS beat a linear function, that they are in some sense in different categories regardless of the choice of constants. This gives us the concept of the category of the function or the order or magnitude designated by Big O. We can change any linear function into another linear polynomial function by changing the constants. We group all of these together and call them linear polynomial functions or polynomial functions on n, written O(n). We can prove that there are at least 7 categories that are important to the study of computer science, constant O(1), linear O(n), log O(log n), log-linear O(n log n), quadratic O(n**2), exponential O(2**n), and factorial O(n!). Note that each of these is a grouping of functions that include all the variations of different constants. By choosing the constants, we can always find some n sub 0 such that a quadratic will beat a linear. This gives us an ordering of these categories\
+\
+O(1) < O(log n) < O(n) < O(n log n) < O(n**2) < O(2**n) < O(n!)\
+\
+For any two specific functions of different categories one can find the n sub 0 at which the larger function overtakes the smaller and forever remains ahead. This way of viewing the relative size of functions will be used when we study the complexity of algorithms later.\
+\
+\
+ \
+Chapter 4: Relations\
+Relations are closely associated with functions but we looked at those first since you are familiar with them from before. Relations are a superset of functions, all functions are relations but not all relations are functions.\
+\
+The fundamental restriction to a function is that it needed to evaluate to exactly one value. A relation can be a many-to-many mapping from the domain to the codomain. In its most abstract statement, all valid subsets of the cross product of the domain and codomain are relations.\
+\
+Def: Let A and B be sets. A binary relation between A and B is a subset of A \\cross B. A relation among any number of sets is a subset of their cross product. \
+aRb, a is related to b\
+     , a is not related to be\
+In a binary relation, the domain is the domain of the relation is the set of all first elements of the tuples. The range is the set of all second members of the pairs. \
+\
+Inverse relation\
+An operation on a relation is to take the inverse.\
+\
+Composition of Relations\
+\
+\
+Graphic Representation of Relations. \
+For relations onto themselves, this gives what we will later call a directed graph.\
+\
+Properties of Relations: reflexive, symmetric, anti-symmetric, transitive, Closure\
+\
+Equivalence of Relations\
+reflective, symmetric, transitive\
+\
+Equivalence Relations and Set Partitions\
+\
+Partial Ordering Relations\
+reflexive, antisymmetric, transitive\
+Given a set Sand an ordering relation R on S,  the pair (S, R) is called a partially ordered set or poset. Note code.\
+\
+Comparability, Linearly Ordered Sets\
+Note that not all pairs in the set S need be in relation. If for two elements of the set S, a, b aRb then we say a and b are comparable under R. If not, they are incomparable written a||b\
+\
+Suppose all elements in the set are pairwise comparable. Such a poset is then called a totally ordered or linearly ordered set and S is called a chain. \
+\
+Product Sets, Product Order, Lexicographical Order\
+\
+Kleene Closure and Order\
+\
+Haase Diagrams and Posets\
+\
+\
+\
+\
+\
+\
+\
+Chapter 4: Algorithms and Complexity Analysis\
+Every function has a method by which a value can be calculated. This often comes from calculus for many of the functions used in engineering but not always. For example we have a way of calculating the factorial function that uses only basic arithmetic. Regardless of how it is calculated you will note that they all have very specific steps that must be executed in some order that are well defined. This is called an algorithm. Computer science began with the proof that any well defined algorithm could be mechanically executed by a machine instead of a human. The term computer originally meant a human using computation tools like an adding machine to execute the steps needed to determine the values. These values of the functions were published in books and the function was evaluated by a lookup in a table instead of on-the-spot calculation.\
+\
+Not all functions take in single parameters. Some, like the permutation function, will take in a large number of values and produce some permutation of those numbers. Sorting is just such a function. Clearly the work done by the sorting function will depend on the size of the input set which we call n. \
+\
+For practical reasons, we are interested in how long an algorithm will take given a particular set of numbers as input. This becomes a different function T for this algorithm which has as input the size of the input set, n. The time a specific algorithm will work on a particular input set before giving a result is the functionT(n). You might naively assume that T(n) will always result in the same value for any size input but you would be wrong. The T function will vary with both the size but also the specific input. For example some sort algorithms will have T(n) in the category of O(n) for sorted input but O(n**2) for out of order input. The big O of the algorithm will vary with the algorithm and its input.\
+\
+While we are sometimes interested in the best-case scenario for the algorithm and its input set, we most often are more interested in the worst case scenario. What will be the big O for this algorithm over all the possible inputs it could get? This defines an upper bound for the complexity of this algorithm. Since the worst and best case for an algorithm may have functions from different categories, the best case may be in a different big O category. When analyzing algorithms, we call this the lower bound for that function on T(n). We give this the name Omega. When we find one category that contains both the upper and lower bound, we call this the Theta of that function. When we find a Theta for an algorithm we say we have found the tight upper bound \
+\
+We defer the further study of algorithmic complexity to your course on Algorithms in your undergrad program.\
+\
+\
+\
+\
+\
+\
+Chapter x: Elementary Counting\
+\
+Set Cardinality, Cardinal Numbers, Cardinality of Infinite Sets\
+The cardinality of a set is defined as the number of elements it contains. Note this implicitly uses the concept of counting which will be more explicitly defined later in the course. When the number of elements in a set is a natural number m or is zero, we say the set is finite in size. Otherwise we say the set has an infinite cardinality or is an infinite set. We define a finite set to be countable. If we can specify a way in which an infinite set can have its members arranged, we call this an infinitely countable set. Later we will see that some sets, such as all the real numbers >= 0 and <= 1 are uncountably infinite. \
+\
+Theorem: for two disjoint sets A and B\
+card(A \\cup B) = card(A) + card(B)\
+\
+\
+Theorem:\
+card(A \\cross B) = card(A) * card(B)\
+\
+Theorem: for two disjoint sets A and B not necessarily disjoint\
+card(A \\cup B), the cardinality will be the sum of the cardinality minus the ones double counted because they are in both sets. The ones in both sets are defined as the intersectiion so we have what is called the inclusion, exclusion principle\
+card(A \\cup B) = card(A) + card(B) - card(A \\cap B)\
+\
+This can be extended to any number of sets.\
+\
+The cardinality of infinite sets\
+The natural numbers are an infinite set. There are many other infinite sets that have a bijection to the set of natural numbers. For example we can use this function to map from natural numbers to the set of integers.  Any set with a bijection to the set of natural numbers is called countably infinite.\
+\
+Cantor famously proved that the set of rational numbers is countably infinite using the diagonalization argument. We assign a special symbol to the cardinality of all countably infinite sets, aleph null.\
+\
+Real numbers can be shown to have no bijection possible to natural numbers. We assign a special symbol to the cardinality of the set of real numbers and any other set with a bijection to it as aleph 1.  \
+\
+Induction versus Deduction\
+Induction has two meanings. In common language induction is a way of generalizing over many observations. But in mathematics we use the word to describe a particular type of deductive reasoning that can prove that some properties of infinite sets must be true. We call this inductive reasoning. \
+\
+Let p be the proposition that the sum of the first n odd numbers is n**2. How can we prove such a proposition? Here is the example of how inductive reasoning works. \
+\
+We can easily evaluate this proposition for small values of n and see that they are true. But since the set of input values is the set of natural numbers we cannot do this for all elements of the set. So we observe this, let us assume that this proposition is true for some value k which is bigger than any value we evaluated manually. If we can prove that the statement MUST be true for the next value, the successor of k, k+1, then we have proven that it must be true for ALL values of n drawn from the natural numbers since we know it is true for the small values and we can continually apply the reasoning that got us from k to k+1 as many times as we need to give us all the values to infinity.\
+\
+So first we introduce the inductive hypothesis, that it is true for some k:\
+Assume that the first k odd numbers sum to k**2. Now we have the proof obligation to prove that with that assumption that this MUST be true for k+1, that is, the sum of the first k+1 odd numbers will give us (k+1)**2. This requires some clever algebra but nothing you can't follow:\
+\
+the first k odd number sum to k**2\
+Sigma(i=0 to k, 2i+1) = Sigma(i=1 to k-1, 2i+1) = k**2\
+which is equivalent to \
+1+3+5+ ... +2(k-1) = k**2\
+we add 2(k+1) to both sides of the equation giving\
+1+3+5+ ... +2(k-1)+2(k+1) = (k+1)**2 = (k**2 + 2k + 1)=k**2 + (2k+1)\
+Using the premise, we rewrite the LHS\
+1+3+5+ ... +2(k-1)  + 2(k+1) = k**2 + 2(k+1)= k**2 + 2k + 1\
+showing the left and RHS of the equation are equal QED.\
+\
+The general principle of weak form of mathematical induction is\
+First, show the proposition is true for one small element from the input.\
+Show that IF the proposition is true for some arbitrary k, that it MUST also be true for the next value after k, k+1. \
+After both parts are proven, you have proven for all value from N.\
+\
+CAUTION: The inductive assumption looks similar to the thing to be proven but you may not use that in the argument. You must use an arbitrary value k, and then prove that it must also be true for k+1 without again stating the assumption. To do so is the famous logical fallacy of assuming the antecedent or begging the question. This is a common error in inductive proofs.\
+\
+There are a set of proofs that can be solved inductively but require that more than one small value be proven. This leads to the stronger form of inductive reasoning. In the strong form, you must prove that the proposition holds for some small number of values.\
+\
+Open Form versus Closed Form Solutions\
+Note that we have proved an equivalence between two expressions, the sum of the first n odd numbers and the expression n**2. The first form has the implied algorithm of summing the first n odd integers, something that is of O(n) while the second has O(1). We call the first version an open form solution while we call the second a closed form solution. The computational advantage is obvious.\
+\
+\
+\
+\
+Chapter x: Recursion, Recursive Functions, Closed Form Recursive Formulas\
+The algorithm to calculate a factorial has the simple open form solution of \
+\\Pi\{1*2*3* ... *n\}\
+\
+This gives us a simple iterative algorithm to calculate n!\
+\
+factorial(n)\
+fact=1\
+for i=1 to n\
+    fact=fact*i\
+return fact\
+\
+However there is another algorithm that has appeal.\
+\
+factorial(n)\
+if n==0\
+    return 1\
+else\
+    return n*(factorial(n-1) )\
+\
+The appeal is the simplicity but the novelty is that the function CALLS ITSELF, a recursion. In general every iterative algorithm can be converted to a recursive algorithm and vice versa. They occur enough in computer science that we need to look at how we look at the time complexity functions they create.\
+\
+Level Number\
+With recursive algorithms, it is helpful to track how many times the algorithm has called itself. We define a level number to be one the first time it is called and one greater with each recursive call.\
+\
+Some famous sequences derived from recursive functions\
+Fibonacci is famous because it was created to capture the reproduction pattern of rabbits but is found abundantly in nature.\
+\
+Fib(n)\
+if n==0\
+    return 0\
+else if n==1\
+    return 1\
+else \
+    return (Fib(n-1) + Fib(n-2))\
+\
+When used on the set of natural numbers we get the sequence\
+0,1,1,2,3,5,8,13,21,34,55, ...\
+\
+Ackermann\
+Famous for a function that is easily defined but has an explosive growth curve. To evaluate the Ackermann function for even the trivial value of Ackermann(1,3) requires 15 steps.\
+\
+Ackermann(m,n)\
+if m==0\
+    return n+1\
+else if m !=0 and n==0\
+    return Ackermann(m-1,1)\
+else (m!=0 and n!=0)\
+    return Ackermann((m-1),Ackermann(m, n-1) )\
+\
+\
+Recursive Relations and their Closed Form Solutions\
+\
+\
+\
+\
+\
+\
+\
+Chapter x: Integers\
+Basic Algebra\
+Associative\
+Commutative\
+Distributive\
+Additive and multiplicative identity\
+Additive inverse\
+\
+\
+\
+Order, Inequality, Absolute Value\
+\
+Well Ordering Principle\
+\
+\
+\
+Primes\
+Division, GCD, Euclid's Algorithm\
+LCM\
+Fundamental Theorem of Arithmetic\
+Congruence Relation\
+Residue Classes\
+Congruence Arithmetic\
+Arithmetic of Residue Classes\
+Integers Modulo m, Zsubm\
+Cancellation Laws for Congruence\
+Reduced Residue Systems, Euler Phi Function\
+Congruence Equations\
+Linear Congruence Equation\
+Chinese Remainder Theorem\
+\
+\
+\
+\
+\
+\
+Chapter x: Languages, Grammars, Automata\
+\
+Alphabet, Words\
+Operations on words: concatenation\
+Formal Definition of Language\
+Operations on Languages\
+Regular Expressions, Regular Languages\
+States, State Transition, Finite State Automata\
+Generative Grammars, Rules of Production\
+Association between Automata, Grammar, Language\
+\
+Later class will explore grammars beyond regular grammars, the languages they generate and the automata that recognize them.\
+\
+\
+\
+\
+\
+\
+Chapter x: Boolean Algebras\
+\
+Two meanings: one the notation used by Boole, the other the more general observation that this algebra is the same as for logic and sets. The general topic of other algebras is covered in a course on abstract algebra in the math department. \
+\
+Sum of Products form for Boolean Algebras\
+well formed formula\
+fundamental product\
+Algorithm for finding sum-of-products form\
+complete sum of products form, midterms, DNF\
+\
+Homomorphism between Boolean Algebra and basic logic gates\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Chapter x: Discrete Probability\
+\
+Chapter x: Graph Theory\
+\
+\
+\
+\
+\
+}

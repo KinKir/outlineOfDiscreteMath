@@ -1,0 +1,453 @@
+
+
+
+
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                       %%%   INTEGERS   %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter {Integers}
+A math major will be expected to complete a course in Number Theory but few computer science programs require it. Yet there are a few concepts from number theory that are important for a computer science or software engineering student to understand to be prepared for either a career in software engineering or the pursuit of graduate school in computer science. This chapter seeks to limit the material to those two objectives only.
+
+\section{Division}
+We introduced the division relationship in a prior chapter. Here it is again.
+\begin{definition}
+If $a$ and $b$ are integers with $a \neq 0$, we say that \textit{a divides b} if there is an integer $c$ such that $b=ac$. When $a$ divides $b$ we say that $a$ is a \textit{factor} of $b$ and that $b$ is a \textit{multiple} of $a$. The notation $a \vert b$ denotes that $a$ divides $b$. We write $a \not\vert b$ when $a$ does not divide $b$.
+
+When the domain of discourse is the set of integers, we can express $a\vert b$ as $\exists c(ac=b)$.
+\end{definition}
+
+\begin{theorem}
+Let $a$, $b$, and $c$ be integers. Then 
+\begin{enumerate}
+\item if $a \vert b$ and $a \vert c$, then $a \vert (b+c)$;
+\item if $a \vert b$, then $a \vert bc$ for all integers $c$;
+\item if $a \vert b$ and $b \vert c$, then $a \vert c$.
+\end{enumerate}
+\end{theorem}
+
+\begin{corollary}
+If $a$, $b$, and $c$ are integers such that $a \vert b$ and $a \vert c$, then $a \vert mb+nc$ whenever $m$ and $n$ are integers.
+\end{corollary}
+
+\begin {theorem} [The Division ``Algorithm'']  Let $a$ be an integer and $d$ a positive integer. Then there are unique integers $q$ and $r$, with $0 \leq r < d$, such that $a=dq+r$.
+\end {theorem}
+
+\begin {definition}
+In the equality given in the divison algorithm $d$ is called the \textit{divisor}, $a$ is called the \textit{dividend}, $q$ is called the \textit{quotient} and $r$ is called the \textit{remainder}. This notation is used to express the quotient and remainder:
+     $$ q=a\; \mathbf{div} \;d,    r=a  \textbf{ mod }\; d. $$
+\end {definition}
+
+\begin{notes}
+The binary operator \textbf{div} in this definition is the same as a programming integer divide. 
+Some languages use the percentage sign ("\%") as the remainder operator.
+This definition of $\bmod$ defines a function since $r$ is uniquely determined.\\ 
+Note how this is calculated for negative integers.\\
+Note how some programming languages had not always calculated this properly.
+\end{notes}
+
+\section {Modular Arithmetic}
+In some applications, we only care about the remainder. Consider time or degrees. We have special notation for this concept.
+
+\begin{definition}\index{congruence}
+If $a$ and $b$ are integers and $m$ is a positive integers, then $a$ is \textit{congruent to b modulo m} if $m$ divides $a-b$. We use the notation $a \equiv b$ (modulo $m$) or $a \equiv b (mod m)$
+\end {definition}
+
+\begin{notes}
+Be careful not to confuse \textbf{mod}, a function with (mod $m$). The first is a binary function used as an infix operator while the second is a qualification for the entire equivalence. Authors use different notations to mean one or the other. The (modulo $m$) equivalence is NOT a function since one integer can be in equivalence to multiple integers, modulo $m$.
+\end{notes}
+
+\begin{theorem}
+Let $a$ and $b$ be integers, and let $m$ be a positive integer. Then $a   \equiv b$ (mod $m$) if and only if $a   \mathbf{mod} m = b   \mathbf{mod} m$ 
+\end{theorem}
+
+\begin{theorem}
+Let $m$ be a positive integer. The integers $a$ and $b$ are congruent modulo $m$ if and only if there is an integer $k$ such that $a=b+km$.
+\end{theorem}
+
+\begin{theorem}
+Let $m$ be a positive integer. Then: \\
+for any integer $a$, we have $a\equiv a \pmod{m},$\\
+if $a\equiv b\pmod{m}$, then $b \equiv a\pmod{m},$ \\
+if $a\equiv b\pmod{m}$ and $b\equiv c\pmod{m}$, then $a\equiv c\pmod{m}$.
+\end{theorem}
+
+\begin{notes}
+Any integer $a$ is congruent modulo $m$ to a unique integer in the set \\
+$$\{0,1,2,\dots ,m-1\}$$
+The uniqueness comes from the fact that $m$ cannot divide the difference of two such integers.\\
+Any two integers $a$ and $b$ are cngruent module $m$ if and oly if they have the same remainder when divided by $m$.
+\end{notes}
+
+\subsection {Residue Classes} \index{residue class}
+Congruence modulo $m$ is an equivalence relation and therefore partitions $\mathbb{Z}$ into disjoint equivalence classes called the \textit{residue classes modulo $m$}. There are $m$ such classes and each contains exactly one of the elements of the set $\{0,1,\dots m-1\}$. A set of $m$ integers $\{a_1,a_2,\dots ,a_m\}$ is called a \textit{complete residue system modulo $m$} if each $a_i$ comes from a distinct residue class. In such a case, each $a_i$ is called a \textit{representative} of its equivalnece class. We denote such a class as $[x]_m$, or sometimes $[x]$for those integers.
+$$[x] = \{a\in \mathbb{Z} \vert a \equiv x \pmod{m}\}$$
+The residue classes can be denoted by 
+$$[0],[1],\dots ,[m-1]$$
+or any other integers drawn from a complete residue system.
+
+Addition and multiplication of residue classes modulo $m$ behaves like equality:
+$$[a] + [b] = [a+b]$$
+$$[a]\cdot[b]=[ab]$$
+
+\begin{theorem}[Modified Cancellation Law for Congruences]
+Suppose $ab \equiv ac\pmod{m}$ and $\gcd{a,m}=d$, then $b\equiv c\pmod{m/d}$ (where the division $m/d$ is integer division).
+\end{theorem}
+
+\begin{corollary}
+Suppose $p$ is prime and $ab\equiv ac\pmod{p}$ and $a \ne 0\pmod{p}$, then $b\equiv c\pmod{p}$.
+\end{corollary}
+
+\begin{theorem}[Congruence Arithmetic]\index{congruence artihmetic}
+Let $m$ be a positive integer. If $a \equiv b$ (mod $m$) and $c \equiv d$ (mod $m$), then $a+c \equiv b+d$ (mod $m$) and $ac \equiv bd$ (mod m).
+\end{theorem}
+
+\begin{definition}[Congruence Classes]\index{congruence classes}
+The set of all integers congruent to an integer $a$ modulo $m$ is called the \textbf{congruence class} of $a$ modulo $b$ or the \textbf{congruence classes modulo $m$}.
+\end{definition}
+
+Under the congruence relation, addition and multiplication behave like addition.
+\begin{corollary}[Congruence Arithmetic]\index{congruence arithmetic}
+Let $m$ be a positive integer and let $a$ and $b$ be integers. Then
+$$(a+b) (\mod {m}) = ((a \mod {m}) + (b \mod  {m} )) \mod {m}$$
+and
+$$ab \mod{m} \equiv ((a \mod{m})(b \mod{m}) \mod{m}$$
+\end{corollary}
+\begin{notes}
+Suppose $p(x)$ is a polynomial with integral coefficients, repeated use of this corollary will prove that if $s\equiv t\pmod{m}$ then $p(s) \equiv p(t)\pmod{m}$.
+\end{notes}
+
+\begin{definition}
+The number of residue classes relatively prime to $m$ or, equivalently, the number of integers between 1 and $m$(inclusive) which are relatively prime to $m$ is denoted by $\phi(m)$. Any list of  $\phi(m)$ numbers which are coprime to $m$ is called the \textit{reduced residue system modulo m}.
+\end{definition}
+
+
+\section{Cryptology}
+
+\section {Primes and Greatest Common Divisors}
+\begin{definition}[Prime Numbers]\index{prime number}
+A positive integer $p$ greater than 1 is called \textit{prime} if the only positive factors of $p$ are 1 and $p$. A positive integer than is greater than 1 and is not prime is called \textit{composite}.
+\end{definition}
+
+\begin{notes}
+The integer $n$ is composite if and only if there exists an integer $a$ such that $a \vert n$ and $1<a<n$.
+\end{notes}
+
+\begin{theorem} [The Fundamental Theorem of Arithmetic]
+Every positive integer greater than 1 can be written uniquely as a prime or as the product of two or more primes where the prime factors are written in order of nondecreasing size.
+\end{theorem}
+
+\begin{theorem}[Composite Number]
+If $n$ is a composite integer, then $n$ has a prime divisor less than or equal to $\sqrt{n}$
+\end{theorem}
+
+\begin{theorem}[The Infinitude of Primes]
+There are infinitely many primes.
+\end{theorem}
+
+\begin{definition}
+The number of primes not exceeding some real number $x$ is defined as the function $\pi(x)$.
+\end{definition}
+
+\begin{theorem}[The Prime Number Theorem]
+The ratio of $\pi(x)$, the number of primes not exceeding $x$, and the expression $\frac{x}{\ln{x}}$ approaches 1 as $x$ grows without bound.\\
+$\frac{\pi(x)}{x / ln x}$
+\end{theorem}
+
+  \subsection {Greatest Common Divisors and Least Common Multiples}
+\begin{definition}[GCD, Greatest Common Divisor]\index{greatest common divisor}\index{GCD}
+Let $a$ and $b$ be integers, not both zero. The largest integer $d$ such that $d \vert a$ and $d \vert b$ is called the \textit{greatest common divisor} of $a$ and $b$. The greatest common divisor of $a$ and $b$ is denoted by gcd(a,b).
+\end{definition}
+
+\begin{definition}
+The integers $a$ and $b$ are \textit{relatively prime} if their greatest common divisor is 1.
+\end{definition}
+
+\begin{definition}
+the integers $a_1,a_2, \dots a_n$ are \textit{pairwise relatively prime} if gcd($a_i,a_j$)=a whenever $1\le i < j \le n$.
+\end{definition}
+
+\begin{definition}[Least Common Multiple]\index{least common multiple}\index{LCM}
+The \textit{least common multiple} of the positive integers $a$ and $b$ is the smallest positive integer that is divisible by b oth $a$ and $b$. The least common multiple of $a$ and $b$ is denoted by lcm($a$,$b$).
+\end{definition}
+
+\begin{definition}[Euler phi Function] \index{Euler phi function}
+The value of the \textbf{Euler $\phi$-function} at the positive integer $n$ is defined to be the number of positive integers less than or equal to $n$ that are relatively prime to $n$. 
+\end{definition}
+
+\section {Integers and Algorithms}
+  \subsection {Representation of Integers}
+\begin{theorem}[Base b Expansion of n]
+Let $b$ be a positive integer greater than 1. Then if $n$ is a positive integer, it can be expressed uniquely in the form
+$$n=a_kb^k+a_{k-1}b^{k-1}+ \dots +a_1b + a_0,$$
+where $k$ is a nonnegative integer, $a_0,a_1, \dots,a_k$ are nonnegative integers less than $b$, and $a_k\neq0$. Choosing $b=1$ gives the conventional decimal expansion and choosing $b=2$ gives the binary expansion. Choosing $b=16$ gives the hexadecimal expansion. Choosing $b=8$ give the octal expansion.
+\end{theorem}
+
+\begin{notes}
+Each hexadecimal digit is represented by four binary digits. Each octal digit is represented by three binary digits.
+\end{notes}
+
+Algorithm for the construction of a base b expansion.
+
+Algorithm for the addition of integers.
+\begin{algorithm}
+\caption{Algorithm for the Addition of Integers}
+\begin{algorithmic}[1]
+\Procedure{integer addition}{$a,b$: positive integers}\\
+\Comment {the binary expansions of $a$ is}\\
+\Comment {$(a_{n-1}a_{n-2} \dots a_1a_0)_2$}\\
+\Comment {and the binary expansion of b is}\\
+\Comment {$(b_{n-1}b_{n-2} \dots b_1b_0)_2$.}\\
+\State $c \gets 0$
+\For {$j \gets 0 , n-1$}
+  \State $d    \gets \lfloor(a_j+b_j+c)/2\rfloor$
+  \State $s_j \gets a_j+b_j+c-2d$
+  \State $c   \gets d$
+\EndFor 
+\State $s_n \gets c$\\
+\Return {$s_n$}\\
+\Comment{where $s_ns_{n-1} \dots s_0)_2$}
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+Algorithm for the multiplication of integers.
+Algorithm for the computation of div and mod.
+
+  \subsection {Modular Exponentiation}
+Algorithm for modular exponentiation.
+You will find that in cryptography it is important to be able to find $b^n \mathbf{mod} m$ efficiently...
+
+\section {The Euclidean Algorithm}
+\begin{lemma}
+Let $a=bq+r$, where $a$,$b$,$q$, and $r$ are integers. Then gcd($a$,$b$)=gcd($b$,$r$)
+\end{lemma}
+Algorithm, The Euclidean Algorithm
+
+\begin{algorithm}
+\caption{The Euclidean Algorithm}
+\begin{algorithmic}[1]
+\Procedure{gcd}{$a,b$: positive integers}
+\State $x \gets a$
+\State $y \gets b$
+\While {$y \ne 0$}
+  \State $r  \gets x \bmod y$
+  \State $x \gets y$
+  \State $y \gets r$
+\EndWhile
+\State \Return {$x$} 
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+\begin {theorem}[Bézout's Theorem]\index{Bézout's theorem}
+If $a$ and $b$ are positive integers, then there exist integers $s$ and $t$ such that gcd($a$,$b$)=$sa+tb$
+\end {theorem}
+Algorithm, the extended Euclidean algorithm to find linear combinations.
+
+\begin{lemma}
+If $a$,$b$, and $c$ are positive integers such that gcd($a$,$b$)=a and $a \vert bc$, then $a \vert c$.
+\end{lemma}
+
+\begin{lemma}
+If $p$ is a prime and $p \vert a_1a_2\dots a_n$ where each $a_i$ is an integers, then $p\vert a_1$ for some $i$.
+\end{lemma}
+
+\begin{theorem}
+Let $m$ be a positive integer and let $a$,$b$ and $c$ be integers. If $ac\equiv bc(\mod m$) and gcd($c$,$m$)=1, then $a\equiv b(\mod m$)
+\end{theorem}
+
+\section {Linear Congruences}
+A congruence of the form
+$$ax \equiv b (\mod m),$$
+where $m$ is a positive integer, $a$ and $b$ are integers, and $x$ is a variable, is called a \textbf{linear congruence}. 
+
+\begin{definition}
+The \textbf{inverse of $a$ modulo $m$} is that integer $\bar{a}$ such that $\bar{a} a\equiv 1 (\mod m)$, when $\bar{a} exists$.
+\end{definition}
+
+\begin{theorem}
+If $a$ and $m$ are relatively prime integers and $m>1$, then an inverse of $a$ modulo $m$ exists. Furthermore, this inverse is unique module $m$. (That is, there is no other inverse smaller than $m$).
+\end{theorem}
+
+\section {The Chinese Remainder Theorem}
+The Chinese Remainder Theorem has an important application in the arithmetic of large numbers.
+
+\begin{theorem}[Chinese Remainder Theorem]
+Let $m_1,m_2, \dots ,m_n$ be pairwise relatively prime positive integers and $a_1,a_2, \dots ,a_n$ be arbitrary integers. Then the system
+\begin{equation}
+\begin{aligned}
+x & \equiv a_1 (\mod m_1) \\
+x & \equiv a_2 (\mod m_2) \\
+   & \vdotswithin{\equiv}\\
+x & \equiv a_n (\mod m_n)
+\end{aligned}
+\end{equation}
+has a unique solution modulo $m=m_1m_2 \dots m_n$.
+\end{theorem}
+
+
+\section {Computer Arithmetic with Large Integers}
+
+To perform arithmetic with large integers, we select moduli $m_1,m_2,\dots , m_n$, where each $m_i$
+is an integer greater than 2, $\gcd(mi,mj ) = 1$ whenever $i= j$, and $m=m_1m_2\dots m_n$ is greater
+than the results of the arithmetic operations we want to carry out.
+
+Once we have selected our moduli, we carry out arithmetic operations with large integers by
+performing componentwise operations on the $n$-tuples representing these integers using their
+remainders upon division by $m_i, i = 1, 2, . . . , n$. Once we have computed the value of each
+component in the result, we recover its value by solving a system of $n$ congruences modulo
+$m_i, i = 1, 2, . . . , n$. This method of performing arithmetic with large integers has several valuable
+features. First, it can be used to perform arithmetic with integers larger than can ordinarily
+be carried out on a computer. Second, computations with respect to the different moduli can be
+done in parallel, speeding up the arithmetic.
+
+Particularly good choices for moduli for arithmetic with large integers are sets of integers of
+the form $2k-1$, where $k$ is a positive integer, because it is easy to do binary arithmetic modulo
+such integers, and because it is easy to find sets of such integers that are pairwise relatively prime.
+A second reason is a consequence of the fact that $\gcd(2a-1,2b-1)=2\gcd(a, b)-1$. 
+
+
+\begin{theorem}[Fermat's Little Theorem]
+If $p$ is prime and $a$ is an intege not divisible by $p$, then
+$a^{p-1} \equiv 1 (\mod p).$
+Furthermore, for every integer $a$ we have
+$a^p \equiv a(\mod p)$
+\end{theorem}
+
+  \subsection{Pseudo Primes}
+\begin{definition}
+Let b be a positive integer. If n is a composite positive integer, and $b^{n-1} \equiv 1 (\mod n)$, then
+\textit{$n$ is called a pseudoprime to the base $b$}.
+\end{definition}
+
+\begin{definition}
+A composite integer $n$ that satisfies the congruence $b^{n-1} \equiv (\mod n)$ for all positive inteers $b$ with $\gcd(b,n)=1$ is called a \textit{Carmichael number}. 
+\end{definition}
+
+Although there are infinitely many Carmichael numbers, more delicate tests, described in
+the exercise set, can be devised that can be used as the basis for efficient probabilistic primality
+tests. Such tests can be used to quickly show that it is almost certainly the case that a given
+integer is prime. More precisely, if an integer is not prime, then the probability that it passes a
+series of tests is close to 0. We will describe such a test in Chapter 7 and discuss the notions
+from probability theory that this test relies on. These probabilistic primality tests can be used,
+and are used, to find large primes extremely rapidly on computers.
+
+\section{Cryptography}
+Number theory plays a key role in cryptography, the subject of transforming information so that
+it cannot be easily recovered without special knowledge. Number theory is the basis of many
+classical ciphers, first used thousands of years ago, and used extensively until the 20th century.
+These ciphers encrypt messages by changing each letter to a different letter, or each block of
+letters to a different block of letters. We will discuss some classical ciphers, including shift
+ciphers, which replace each letter by the letter a fixed number of positions later in the alphabet,
+wrapping around to the beginning of the alphabet when necessary. The classical ciphers we will
+discuss are examples of private key ciphers where knowing how to encrypt allows someone to
+also decrypt messages.With a private key cipher, two parties who wish to communicate in secret
+must share a secret key. The classical ciphers we will discuss are also vulnerable to cryptanalysis,
+which seeks to recover encrypted information without access to the secret information used to
+encrypt the message.We will show how to cryptanalyze messages sent using shift ciphers.
+Number theory is also important in public key cryptography, a type of cryptography invented
+in the 1970s. In public key cryptography, knowing how to encrypt does not also tell someone
+howto decrypt. The most widely used public key system, called the RSA cryptosystem, encrypts
+messages using modular exponentiation, where the modulus is the product of two large primes.
+Knowing how to encrypt requires that someone know the modulus and an exponent. (It does
+not require that the two prime factors of the modulus be known.) As far as it is known, knowing
+how to decrypt requires someone to know how to invert the encryption function, which can only
+be done in a practical amount of time when someone knows these two large prime factors. In
+this chapter we will explain how the RSA cryptosystem works, including how to encrypt and
+decrypt messages.
+The subject of cryptography also includes the subject of cryptographic protocols, which are
+exchanges of messages carried out by two or more parties to achieve a specific security goal.We
+will discuss two important protocols in this chapter. One allows two people to share a common
+secret key. The other can be used to send signed messages so that a recipient can be sure that
+they were sent by the purported sender.
+
+  \subsection {Public Key Cryptography}
+All classical ciphers, including shift ciphers and affine ciphers, are examples of \textbf{private key
+cryptosystems}. In a private key cryptosystem, once you know an encryption key, you can
+quickly find the decryption key. So, knowing how to encrypt messages using a particular key
+allows you to decrypt messages that were encrypted using this key. For example, when a shift
+cipher is used with encryption key $k$, the plaintext integer $p$ is sent to
+$$c=(p+k) \bmod 26$$
+Decryption is carried out by shifting by $-k$; that is,
+$$p=(c-k) \bmod 26$$
+So knowing how to encrypt with a shift cipher also tells you how to decrypt.
+When a private key cryptosystem is used, two parties who wish to communicate in secret
+must share a secret key. Because anyone who knows this key can both encrypt and decrypt
+messages, two people who want to communicate securely need to securely exchange this key.
+(We will introduce a method for doing this later in this section.) The shift cipher and affine cipher
+cryptosystems are private key cryptosystems. They are quite simple and are extremely vulnerable
+to cryptanalysis. However, the same is not true of many modern private key cryptosystems. In
+particular, the current US government standard for private key cryptography, the Advanced
+Encryption Standard (AES), is extremely complex and is considered to be highly resistant to
+cryptanalysis. (See [St06] for details on AES and other modern private key cryptosystems.)
+AES is widely used in government and commercial communications. However, it still shares
+the property that for secure communications keys be shared. Furthermore, for extra security, a
+new key is used for each communication session between two parties, which requires a method
+for generating keys and securely sharing them.
+To avoid the need for keys to be shared by every pair of parties that wish to communicate
+securely, in the 1970s cryptologists introduced the concept of \textbf{public key cryptosystems}. When
+such cryptosystems are used, knowing how to send an encrypted message does not help decrypt
+messages. In such a system, everyone can have a publicly known encryption key. Only the
+decryption keys are kept secret, and only the intended recipient of a message can decrypt it,
+because, as far as it is currently known, knowledge of the encryption key does not let someone
+recover the plaintext message without an extraordinary amount of work (such as billions of
+years of computer time).
+
+  \subsection {The RSA Cryptosystem}
+  In 1976, three researchers at the Massachusetts Institute of Technology—Ronald Rivest, Adi
+Shamir, and Leonard Adleman—introduced to the world a public key cryptosystem, known as the
+RSA system, from the initials of its inventors. As often happens with cryptographic discoveries,
+the RSA system had been discovered several years earlier in secret government research in the
+United Kingdom. Clifford Cocks, working in secrecy at the United Kingdom’s Government
+Communications Headquarters (GCHQ), had discovered this cryptosystem in 1973. However,
+his invention was unknown to the outside world until the late 1990s, when he was allowed to
+share classified GCHQ documents from the early 1970s. (An excellent account of this earlier
+discovery, as well as the work of Rivest, Shamir, and Adleman, can be found in [Si99].)
+In the RSA cryptosystem, each individual has an encryption key $(n, e)$ where $n = pq$, the
+modulus is the product of two large primes $p$ and $q$, say with 200 digits each, and an exponent
+$e$ that is relatively prime to $(p-1)(q-1)$.To produce a usable key, two large primes must be
+found. This can be done quickly on a computer using probabilistic primality tests, referred to
+earlier in this section. However, the product of these primes $n = pq$, with approximately 400
+digits, cannot, as far as is currently known, be factored in a reasonable length of time. As we
+will see, this is an important reason why decryption cannot, as far as is currently known, be
+done quickly without a separate decryption key.
+
+To encrypt messages using a particular key $(n, e)$, we first translate a plaintext message $M$
+into sequences of integers. To do this, we first translate each plaintext letter into a two-digit
+number, using the same translation we employed for shift ciphers, with one key difference.
+That is, we include an initial zero for the letters A through J, so that A is translated into 00,
+B into 01, . . . , and J into 09. Then, we concatenate these two-digit numbers into strings of digits.
+Next, we divide this string into equally sized blocks of $2N$ digits, where $2N$ is the largest even
+number such that the number 2525 . . . 25 with $2N$ digits does not exceed $n$. (When necessary,
+we pad the plaintext message with dummy Xs to make the last block the same size as all other
+blocks.)
+After these steps, we have translated the plaintext message $M$ into a sequence of integers
+$m_1, m_2, . . . , m_k$ for some integer $k$. Encryption proceeds by transforming each block $m_i$ to a
+ciphertext block $c_i$ . This is done using the function
+$$C = M^e \mod n.$$
+(To perform the encryption, we use an algorithm for fast modular exponentiation, such as
+Algorithm 5 in Section 4.2.) We leave the encrypted message as blocks of numbers and send
+these to the intended recipient. Because the RSA cryptosystem encrypts blocks of characters
+into blocks of characters, it is a block cipher.
+
+The plaintext message can be quickly recovered from a ciphertext message when the decryption
+key $d$, an inverse of $e modulo (p-1)(q-1)$, is known. [Such an inverse exists because
+$\gcd(e, (p-1)(q-1)) = 1$.] To see this, note that if $de \equiv 1 (\mod (p-1)(q-1))$, there is an
+integer $k$ such that $de = 1 + k(p-1)(q-1)$. It follows that
+$$C^d \equiv (M^e)^d = M^{de} = M^{1+k(p-1)(q-1)} (\mod n).$$
+By Fermat’s little theorem [assuming that $\gcd(M, p) = \gcd(M, q) = 1$, which holds except in
+rare cases, which we cover in Exercise 28], it follows that $M^{p-1} \equiv 1 (\mod p)$ and $M^{q-1} \equiv
+1 (\mod q)$. Consequently,
+$$C^d \equiv M \cdot (M^{p-1})^{k(q-1)} \equiv M \cdot 1 \equiv M (\mod p)$$
+and
+$$C^d \equiv M \cdot (M^{q-1})^{k(p-1)} \equiv M \cdot 1 = M (\mod q).$$
+Because $\gcd(p, q) = 1$, it follows by the Chinese Remainder Theorem that
+$$C^d \equiv M (\mod pq).$$
+\newpage
+

@@ -1,0 +1,556 @@
+\documentclass[11pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{letterpaper}
+
+%%% TITLE FORMATS 
+\usepackage{sectsty}
+%\titleformat{\subsection}
+%{\normalfont\slshape}{\thesection}{1em}{}
+
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\fancyhf{}
+\fancyhead[RO]{An Outline of Discrete Mathematics}
+\fancyhead[LE]{\rightmark}
+\fancyfoot[LE]{\thepage}
+\fancyfoot[RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+
+
+
+
+
+\begin{document}
+\thispagestyle{empty}
+\title{A Brief Outline of Discrete Mathematics for the Undergraduate Computer Science Student}
+\author{Dale Fletter}
+\date{\today} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+         %\thanks{Daryl Posnett, Vladimir Filkov}
+\maketitle
+\frontmatter 
+\tableofcontents
+\mainmatter
+
+
+
+\chapter{The Foundations: Logic and Proofs}
+ \section{Propositional Logic}
+  \subsection{Introduction}
+  \subsection{Propositions}
+  \subsection{Conditional Statements}
+  \subsection{Truth Tables of Compound Propositions}
+  \subsection{Precedence of Logical Operations}
+  \subsection{Logic and Bit Operations}
+  
+ \section{Applications of Propositional Logic}
+  \subsection{Introduction}
+  \subsection{Translating English Sentences}
+  \subsection{System Specifications}
+  \subsection{Boolean Searches}
+  \subsection{Logic Puzzles}
+  \subsection{Logic Circuits}
+  
+ \section{Propositional Equivalences}
+  \subsection{Introduction}
+  \subsection{Logical Equivalneces}
+  \subsection{Using De Morgan's Laws}
+  \subsection{Constructing New Logical Equivalences}
+  \subsection{Propositional Satisfiability}
+  \subsection{Applications of Satisfiability}
+  \subsection{Solving Satisfiability Problems}
+  
+ \section{Predicates and Quantifiers}
+  \subsection{Introduction}
+  \subsection{Predicates}
+  \subsection{Quantifiers}
+  \subsection{Quantifiers with Restricted Domains}
+  \subsection{Precedence of Quantifiers}
+  \subsection{Binding Variables}
+  \subsection{Logical Equivalences Involving Quantifiers}
+  \subsection{Negating Quantified Expressions}
+  \subsection{Translating from English into Logical Expressions}
+  \subsection{Using Quantifiers in System Specifications}
+  \subsection{Examples from Lewis Carroll}
+  \subsection{Logic Programming}
+  
+ \section{Nested Quantifiers}
+  \subsection{Introduction}
+  \subsection{Understanding Statements Involving Nested Quantifiers}
+  \subsection{The Order of Quantifiers}
+  \subsection{Translating Mathematical Statements into Statements Involving Nested Quantifiers}
+  \subsection{Translating from Nested Quantifiers into English}
+  \subsection{Translating English Sentences into Logical Expressions}
+  \subsection{Negating Nested Quantifiers}
+  
+ \section{Rules of Inference}
+  \subsection{Introduction}
+  \subsection{Valid Arguments in Propositional Logic}
+  \subsection{Rules of Inference for Propositional Logic}
+  \subsection{Using Rules of Inference to Build Arguments}
+  \subsection{Resolution}
+  \subsection{Fallacies}
+  \subsection{Rules of Inference for Qualtified Statements}
+  \subsection{Combining Rules of Inference for Propositions and Quantified Statements}
+  
+ \section{Introduction to Proofs}
+  \subsection{Introduction}
+  \subsection{Some Terminology}
+  \subsection{Understanding How Theorems Are Stated}
+  \subsection{Methods of Proving Theorems}
+  \subsection{Direct Proofs}
+  \subsection{Proof by Contraposition}
+  \subsection{Proofs by Contradiction}
+  \subsection{Mistakes in Proofs}
+  \subsection{Just a Beginning}
+  
+ \section{Proof Methods and Strategy}
+  \subsection{Introduction}
+  \subsection{Exhaustive Proof and Proof by Cases}
+  \subsection{Existence Proofs}
+  \subsection{Uniqueness Proofs}
+  \subsection{Proof Strategies}
+  \subsection{Looking for Counterexamples}
+  \subsection{Proof Strategy in Action}
+  \subsection{Tilings}
+  \subsection{The Role of Open Problems}
+  \subsection{Additional Proof Methods}
+  
+
+\chapter{Basic Structures: Sets, Functions, Sequences, Sums, and Matrices}
+ \section{Sets}
+  \subsection{Introduction}
+   \subsubsection{Definition of Set}
+   \subsubsection{Notation for Common Sets}
+   \subsubsection{Definition of Set Equality}
+   \subsubsection{The Empty Set}
+  \subsection{Venn Diagrams}
+  \subsection{Subsets}
+   \subsubsection{Definition of Subset}
+  \subsection{The Size of a Set}
+   \subsubsection{Definition of Set Cardinality}
+  \subsection{Power Sets}
+  \subsection{Cartesian Products}
+  \subsection{Using Set Notation with Quantifiers}
+  \subsection{Truth Sets and Quantifiers}
+  
+ \section{Set Operations}
+  \subsection{Introduction}
+  \subsection{Set Identities}
+  \subsection{Generalized Unions and Intersections}
+  \subsection{Computer Representation of Sets}
+ 
+ \section{Functions}
+  \subsection{Introduction}
+  \subsection{One-to-One and Onto Functions}
+  \subsection{Inverse Functions and Compositions of Functions}
+  \subsection{The Graphs of Functions}
+  \subsection{Partial Functions}
+  
+ \section{Sequences and Summations}
+  \subsection{Introduction}
+  \subsection{Sequences}
+  \subsection{Recurrence Relations}
+  \subsection{Special Integer Sequences}
+  \subsection{Summations}
+  
+ \section{Cardinality of Sets}
+  \subsection{Introduction}
+  \subsection{Countable Sets}
+  \subsection{An Uncountable Set}
+  
+ \section{Matrices}
+  \subsection{Introduction}
+  \subsection{Matrix Arithmetic}
+  \subsection{Transposes and Powers of Matrices}
+  \subsection{Zero-One Matrices}
+  
+ 
+\chapter{Algorithms}
+ \section{Algorithms}
+  \subsection{Introduction}
+  \subsection{Searching Algorithms}
+  \subsection{Sorting}
+  \subsection{Greedy Algorithms}
+  \subsection{The Halting Problem}
+  
+ \section{The Growth of Functions}
+  \subsection{Introduction}
+  \subsection{Big-O Notation}
+  \subsection{Big-O Estimates for Some Important Functions}
+  \subsection{The Growth of Cobinations of Functions}
+  \subsection{Big-Omega and Big-Theta Notation}
+  
+ \section{Complexity of Algorithms}
+  \subsection{Introduction}
+  \subsection{Time Complexity}
+  \subsection{Complexity of Matrix Multiplication}
+  \subsection{Algorithmic Paradigms}
+  \subsection{Understanding the Complexity of Algorithms}
+ 
+\chapter{Number Theory and Cryptography}
+ \section{Divisibility and Modular Arithmetic}
+  \subsection{Introduction}
+  \subsection{Division}
+  \subsection{The Division Algorithm}
+  \subsection{Modular Arithmetic}
+  \subsection{Arithmetic Modulo $m$}
+  
+ \section{Integer Representation and Algorithms}
+  \subsection{Introduction}
+  \subsection{Representations of Integers}
+  \subsection{Algorithms for Integer Operations}
+  \subsection{Modular Exponentiation}
+  
+ \section{Primes and Greates Common Divisors}
+  \subsection{Introduction}
+  \subsection{Primes}
+  \subsection{Trial Division}
+  \subsection{The Sieve of Eratosthenes}
+  \subsection{Conjectures and Open Problems About Primes}
+  \subsection{Greatest Common Divisors and Least Common Multiples}
+  \subsection{The Euclidean Algorithm}
+  
+ \section{Solving Congruences}
+  \subsection{Introduction}
+  \subsection{Linear Congruences}
+  \subsection{The Chinese Remainder Theorem}
+  \subsection{Computer Arithmetic with Large Integers}
+  \subsection{Fermat's Little Theorem}
+  \subsection{Pseudoprimes}
+  \subsection{Primitive Roots and Discrete Logarithms}
+  
+ \section{Applications of Congruences}
+  \subsection{Hashing Functions}
+  \subsection{Pseudorandom Numbers}
+  \subsection{Check Digits}
+  
+ \section{Cryptography}
+  \subsection{Introduction}
+  \subsection{Classical Cryptography}
+  \subsection{PublicKey Cryptography}
+  \subsection{The RSA Cryptosystem}
+  \subsection{RSA Encryption}
+  \subsection{RSA Dcryption}
+  \subsection{RSA as a Public Key System}
+  \subsection{Cryptographic Protocols}
+  
+ 
+\chapter{Induction and Recursion}
+ \section{Mathematical Induction}
+  \subsection{Introduction}
+  \subsection{Mathematical Induction}
+  \subsection{Why Mathematical Induction is Valid}
+  \subsection{The Good and the Bad of Mathematical Induction}
+  \subsection{Examples of Proofs by Mathematical Induction}
+  \subsection{Mistaken Proofs By Mathematical Induction}
+  \subsection{Guidelines for Proofs by Mathematical Induction}
+  
+ \section{Strong Induction and Well-Ordering}
+  \subsection{Introduction}
+  \subsection{Strong Induction}
+  \subsection{Examples of Proofs Using Strong Induction}
+  \subsection{Using Strong Induction in Computation Geometry}
+  \subsection{Proofs Using the Well-Ordered Property}
+  
+ \section{Recursive Definitions and Structural Induction}
+  \subsection{Introduction}
+  \subsection{Recursively Defined Functions}
+  \subsection{Recursively Defined Sets and Structures}
+  \subsection{Structural Induction}
+  \subsection{Generalized Induction}
+  
+ \section{Recursive Algorithms}
+  \subsection{Induction}
+  \subsection{Proving Recursive Algorithms Correct}
+  \subsection{Recursion and Iteration}
+  \subsection{The Merge Sort}
+  
+ \section{Program Correctness}
+  \subsection{Introduction}
+  \subsection{Program Verification}
+  \subsection{Rules of Inference}
+  \subsection{Conditional Statements}
+  \subsection{Loop Invariants}
+ 
+\chapter{Counting}
+ \section{The Basics of Counting}
+  \subsection{Introduction}
+  \subsection{Basic Counting Principles}
+  \subsection{More Complex Counting Problems}
+  \subsection{The Subtraction Rule (Inclusion-Exclusion for Two Sets)}
+  \subsection{The Division Rule}
+  \subsection{Tree Diagrams}
+  
+ \section{The Pigeonhole Principle}
+  \subsection{Introduction}
+  \subsection{The Generalized Pigeonhole Principle}
+  \subsection{Some Elegant Applications of the Pigeonhold Principle}
+ 
+ \section{Permutations and Combinations}
+  \subsection{Introduction}
+  \subsection{Permutations}
+  \subsection{Combinations}
+  
+ \section{Binomial Coefficients and Indentities}
+  \subsection{The Binomial Theorem}
+  \subsection{Pascal's Identify and Triangle}
+  \subsection{Other Identities Involving Binomial Coefficients}
+  
+ \section{Generalized Permutations and Combinations}
+  \subsection{Introduction}
+  \subsection{Permutations with Repetition}
+  \subsection{Combinations with Repetition}
+  \subsection{Permutations with Indistinguishable Objects}
+  \subsection{Distribuing Objects into Boxes}
+  
+ \section{Generating Permutations and Combinations}
+  \subsection{Introduction}
+  \subsection{Generating Permutations}
+  \subsection{Generating Combinations}
+ 
+\chapter{Discrete Probability}
+ \section{An Introduction to Discrete Probability}
+  \subsection{Introduction}
+  \subsection{Finite Probability}
+  \subsection{Probabilities of Complements and Unions of Events}
+  \subsection{Probabilistic Reasoning}
+  
+ \section{Probability Theory}
+  \subsection{Introduction}
+  \subsection{Assigning Probabilities}
+  \subsection{Probabilities of Complements and Unions of Events}
+  \subsection{Conditional Probability}
+  \subsection{Independence}
+  \subsection{Bernoulli Trials and the Binomial Distribution}
+  \subsection{Random Variables}
+  \subsection{The Birthday Problem}
+  \subsection{Monte Carlo Algorithms}
+  \subsection{The Probabilistic Method}
+  
+ \section{Bayes' Theorem}
+  \subsection{Introduction}
+  \subsection{Bayes' Theorem}
+  \subsection{Bayesian Spam Filters}
+  
+ \section{Expected Value and Variance}
+  \subsection{Introduction}
+  \subsection{Expected Values}
+  \subsection{Linearity of Expectations}
+  \subsection{Average-Case Computational Complexity}
+  \subsection{The Geometric Distribution}
+  \subsection{Independent Random Variables}
+  \subsection{Variance}
+ 
+\chapter{Advanced Counting Techniques}
+ \section{Application of Recurrence Relations}
+  \subsection{Introduction}
+  \subsection{Modeling With Recurrence Relations}
+  \subsection{Algorithms and Recurrence Relations}
+  
+ \section{Solving Linear Recurrence Relations}
+  \subsection{Introduction}
+  \subsection{Solving Linear Homogeneous Recurrence Relations with Constant Coefficients}
+  \subsection{Linear Nonhomogeneous Recurrence Relations with Constant Coefficients}
+  
+ \section{Divide-and-Conquer Algorithms and Recurrence Relations}
+  \subsection{Introduction}
+  \subsection{Divide-and-Conquer Recurrence Relations}
+  
+ \section{Generating Functions}
+  \subsection{Introduction}
+  \subsection{Useful Facts About Power Series}
+  \subsection{Counting Problems and Generating Functions}
+  \subsection{Using Generating Functions to Solve Recurrence Relations}
+  \subsection{Proving Indentities via Generating Functions}
+  
+ \section{Inclusion-Exclusion}
+  \subsection{Introduction}
+  \subsection{The Principle of Inclusion-Exclusion}
+  
+ \section{Applications of Inclusion-Exclusion}
+  \subsection{Introduction}
+  \subsection{An Alternative Form of Inclusion-Exclusion}
+  \subsection{The Sieve of Eratosthenes}
+  \subsection{The Number of Onto Functions}
+  \subsection{Derangements}
+ 
+\chapter{Relations}
+ \section{Relations and Their Properties}
+  \subsection{Introduction}
+  \subsection{Functions as Relations}
+  \subsection{Relations on a Set}
+  \subsection{Combining Relations}
+  
+ \section{$n$-ary Relations and Their Applications}
+  \subsection{Introduction}
+  \subsection{$n$-ary Relations}
+  \subsection{Databases and Relations}
+  \subsection{Operations on $n$-ary Relations}
+  \subsection{SQL}
+  
+ \section{Representing Relations}
+  \subsection{Introduction}
+  \subsection{Representing Relations Using Matrices}
+  \subsection{Representing Relations Using Digraphs}
+  
+ \section{Closure of Relations}
+  \subsection{Introduction}
+  \subsection{Closures}
+  \subsection{Paths in Directed Graphs}
+  \subsection{Transitive Closures}
+  \subsection{Warshall's Algorithm}
+  
+ \section{Equivalence Relations}
+  \subsection{Introduction}
+  \subsection{Equivalence Relations}
+  \subsection{Equivalence Classes}
+  \subsection{Equivalence Classes and Partitions}
+  
+ \section{Partial Orderings}
+  \subsection{Introduction}
+  \subsection{Lexicographic Order}
+  \subsection{Hasse Diagrams}
+  \subsection{Maximal and Minimal Elements}
+  \subsection{Lattices}
+  \subsection{Topological Sorting}
+ 
+\chapter{Graphs}
+ \section{Graphs and Graph Models}
+  \subsection{Graph Models}
+  
+ \section{Graph Terminology and Special Types of Graphs}
+  \subsection{Introduction}
+  \subsection{Basic Terminology}
+  \subsection{Bipartite Graphs}
+  \subsection{Bipartite Graphs and Matchings}
+  \subsection{Some Applications of Special Types of Graphs}
+  \subsection{New Graphs from Old}
+  
+ \section{Representing Graphs and Graph Isomorphism}
+  \subsection{Introduction}
+  \subsection{Representing Graphs}
+  \subsection{Adjacency Matrices}
+  \subsection{Incidence Matrices}
+  \subsection{Determing whether Two Simple Graphs are Isomorphic}
+  
+ \section{Connectivity}
+  \subsection{Introduction}
+  \subsection{Paths}
+  \subsection{Connectedness in Unidirected Graphs}
+  \subsection{How Connected is a Graph?}
+  \subsection{Connectedness in Directed Graphs}
+  \subsection{Paths and Isomorphism}
+  \subsection{Counting Paths Between Vertices}
+  
+ \section{Euler and Hamilton Paths}
+  \subsection{Introduction}
+  \subsection{Euler Paths and Circuits}
+  \subsection{Hamilton Paths and Circuits}
+  \subsection{Applications of Hamilton Circuits}
+  
+ \section{Shortest-Path Problems}
+  \subsection{Introduction}
+  \subsection{A Shortest-Path Algorithm}
+  \subsection{The Traveling Salesperson Problem}
+  
+ \section{Planar Graphs}
+  \subsection{Introduction}
+  \subsection{Kuratowski's Theorem}
+  
+ \section{Graph Coloring}
+  \subsection{Introduction}
+  \subsection{Applications of Graph Colorings}
+ 
+\chapter{Trees}
+ \section{Introduction to Trees}
+  \subsection{Rooted Trees}
+  \subsection{Trees as Models}
+  \subsection{Properties of Trees}
+  
+ \section{Applications of Trees}
+  \subsection{Introduction}
+  \subsection{Binary Search Trees}
+  \subsection{Decision Trees}
+  \subsection{Game Trees}
+  
+ \section{Tree Traversal}
+  \subsection{Introduction}
+  \subsection{Universal Address Systems}
+  \subsection{Traversal Algorithms}
+  \subsection{Infix, Prefix, and Postfix Notation}
+  
+ \section{Spanning Trees}
+  \subsection{Introduction}
+  \subsection{Depth-First Search}
+  \subsection{Breadth-First Search}
+  \subsection{Backtracking Applications}
+  \subsection{Depth-First Search in Directed Graphs}
+  
+ \section{Minimum Spanning Trees}
+  \subsection{Introduction}
+  \subsection{Algorithms for Minimum Spanning Trees}
+ 
+\chapter{Boolean Algebra}
+ \section{Boolean Functions}
+  \subsection{Introduction}
+  \subsection{Boolean Expressions and Boolean Functions}
+  \subsection{Identities of Boolean Algebra}
+  \subsection{Duality}
+  \subsection{The Abstract Definition of a Boolean Algebra}
+  
+ \section{Representing Boolean Functions}
+  \subsection{Sum-of-Products Expansions}
+  \subsection{Functional Completeness}
+  
+ \section{Logic Gates}
+  \subsection{Introduction}
+  \subsection{Combinations of Gates}
+  \subsection{Examples of Circuits}
+  \subsection{Adders}
+  
+ \section{Minimization of Circuits}
+  \subsection{Introduction}
+  \subsection{Karnaugh Maps}
+  \subsection{Don't Care Conditions}
+  \subsection{The Quine-McCluskey Method}
+
+\chapter{Modeling Computation}
+ \section{Languages and Grammars}
+  \subsection{Introduction}
+  \subsection{Phrase-Structure Grammars}
+  \subsection{Types of Phrase-Structure Grammars}
+  \subsection{Derivation Trees}
+  \subsection{Backus-Naur Form}
+  
+ \section{Finite-State Machines with Output}
+  \subsection{Introduction}
+  \subsection{Finite-State Machines with Outputs}
+  
+
+ \section{Finite-State Machines with No Output}
+  \subsection{Introduction}
+  \subsection{Set of Strings}
+  \subsection{Finite-State Automata}
+  \subsection{Language Recognition by Finite-State Machines}
+  \subsection{Nondeterministic Finite-State Automata}
+  
+ \section{Language Recognition} 
+  \subsection{Introduction}
+  \subsection{Kleene's Theorem}
+  \subsection{Regular Sets and Regular Grammars}
+  \subsection{More Powerful Types of Machines}
+  
+ \section{Turing Machines}
+  \subsection{Introduction}
+  \subsection{Definition of Turing Machines}
+  \subsection{Using Turing Machines to Recognize Sets}
+  \subsection{Computing Functions with Turing Machines}
+  \subsection{Different Types of Turing Machines}
+  \subsection{The Church-Turing Thesis}
+  \subsection{Computational Complexity, Computability, and Decidability}
+
+\end{document}

@@ -1,0 +1,145 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+%\documentclass[addpoints,12pt]{exam} % use larger type; default would be 10pt
+\documentclass[answers, 10pt]{exam}
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage{amsfonts}
+
+%%% HEADERS & FOOTERS   (commented out for exam package)
+\begin{comment}
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+\end{comment}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Exercises for Discrete Math}
+
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+Answer the questions in the spaces provided on the
+question sheets. If you run out of room for an answer,
+continue on the back of the page.}}}
+\end{center}
+\vspace{0.1in}
+\makebox[\textwidth]{Name and section:\enspace\hrulefill}
+\vspace{0.2in}
+\makebox[\textwidth]{Instructor’s name:\enspace\hrulefill}
+
+\begin{questions}
+
+\question[10]
+Prove that between every two rational numbers $a/b$ and $c/d$,
+\begin{parts}
+\part
+there is a rational number,
+\part
+there are an infinite number of rational numbers.
+\end{parts}
+
+\begin{solution}
+\begin{parts}
+\part
+Constructive proof. Assume without out loss of generality that $\frac{a}{b} < \frac{c}{d}$. Then, $\frac{a}{b}+\frac{a}{b}<\frac{a}{b}+\frac{c}{d} < \frac{c}{d}+\frac{c}{d}$. Dividing by 2 we get $\frac{a}{b} < \frac{ \frac{c}{d}+\frac{c}{d}}{2} < \frac{c}{d}$ which shows that $\frac{ \frac{c}{d}+\frac{c}{d}}{2}$ lies between the two rational numbers. 
+\part
+Proof by contradiction. Assume there are an finite number of rational numbers between $\frac{a}{b} $and$ \frac{c}{d}$ and let $\frac{e}{f}$ represent the smallest of that finite set of rational numbers. Then applying (a), we know there is some rational number that exists between $\frac{a}{b}$ and $\frac{e}{f}$ which contradicts the assumption that we have a smallest rational number of the finite set. We reject the assumption that there are a finite number of rational numbers and conclude there are an infinite number of rational numbers between the two given rationals.
+\end{parts}
+\end{solution}
+
+\question[10]
+Is this set the powerset of any set? If yes, provide the set of which it is the powerset.
+$$\{\emptyset,\{\emptyset\},\{a\},\{\{a\}\},\{\{\{a\}\}\},\{\emptyset,a\},\{\emptyset,\{a\}\},\{\emptyset,\{\{a\}\},\{a,\{a\}\},\{a,\{\{a\}\}\},\{\{a\},\{\{a\}\}\}, \{\emptyset,a,\{a\}\}, \{\emptyset,a,\{\{a\}\}\}, \{\emptyset,a,\{a\}, \{\{a\}\},\{a,\{a\},\{\{a\}\},\{\emptyset,a,\{a\}, \{\{a\}\}\}\}$$
+
+\begin{solution}
+A problem like this is not as difficult if you recall a few things. First, a powerset will have a cardinality of a power of 2. Second it will include the null set and the set itself. So if you identify the element with the greatest number of elements, it will be the set which may have produced this as its powerset. After that it is a matter of generating the powerset and making sure the given set is the same. In this case the set with the most elements is given last and it is $\{\emptyset,a,\{a\},\{\{a\}\}\}$. When you write out the 16 possible subsets you will see they match what was given and conclude that yes, this is the powerset.
+\end{solution}
+
+\question[10]
+Show that if $R$ is an equivalence relation on a set $A$ then $R^{-1}$ is also an equivalence relation on $A$.
+
+ \begin{solution}
+ Since $R$ is an equivalence relation then $R$ is reflexive, symetric, and transitive. Clearly $R^{-1}$ will also be reflexive. Since the relation is symetric, any pair $(e,f)$ will be matched with a pair $(f,e)$. This means that the order of the elements in pair do not matter since both pairs will be present. Transitivity too is ensured. Since the relation is symetric all pairs $(a,b)$ and $(b,c)$ will have matching pairs $(b,a)$ and $(c,b)$.
+ \end{solution}
+ 
+ \question[10]
+ \begin{parts}
+ \part
+ Give an example of a function $f: \mathbb{N} \rightarrow\mathbb{Z}$ that is both 1-1 and onto 
+ \part
+ What is the inverse function in part a)?
+ \end{parts}
+
+  \begin{solution}
+  \begin{parts}
+  \part
+  Any function that is both 1-1 and onto must be a 1-1 correspodence or a mapping between the sets. We are asked to provide a function that will uniquely determine a mapping from natural numbers to integers that is invertible. This might at first seem impossible since natural numbers seem to somehow be ``smaller than'' integers. But since both are infinite sets we can map even numbers to positive integers and odd natural numbers to negative numbers. Assuming we include zero as a natural number we can offer this example (others are possible):
+\begin{displaymath}
+  f(n) = \left\{
+    \begin{array}{rl}
+      -n/2               &      \textrm {if $n$ is even} \\
+      (n-1)/2          &      \textrm {if $n$ is odd} \\
+    \end{array}
+    \right.
+\end{displaymath}
+\part
+\begin{displaymath}
+  f(n) = \left\{
+    \begin{array}{rl}
+      -2n               &      \textrm {if $n$ is even} \\
+      2n+1          &      \textrm {if $n$ is odd} \\
+    \end{array}
+    \right.
+\end{displaymath}
+\end{parts}
+\end{solution}
+ 
+\end{questions}
+\end{document}

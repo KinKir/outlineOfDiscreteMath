@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{Aspnes2002}
+James Aspnes.
+\newblock Fast deterministic consensus in a noisy environment.
+\newblock {\em Journal of Algorithms}, 45(1):16--39, October 2002.
+
+\bibitem{Aspnes1992}
+James Aspnes.
+\newblock {\em Wait-Free Consensus}.
+\newblock PhD thesis, Carnegie-Mellon University, 1992.
+
+\end{thebibliography}

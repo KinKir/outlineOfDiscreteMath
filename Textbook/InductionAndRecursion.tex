@@ -1,0 +1,171 @@
+
+
+
+                                                                   %%%  INDUCTION AND RECURSION   %%%
+\chapter {Induction and Recursion}
+recursive definitions of sets
+
+Recursion occurs throughout the study of computer science and this chapter must give you the basis to be able to understand the many ways in which it serves our discipline. The first is the concept of proving properties of infinite sets using a recursive argument. All recursive arguments have two parts that have the ladder as a metaphor. Ladders have rungs that are equally spaced. And one you are on a rung, if you can step up to the next one you know you can climb the ladder regardless how tall it may be. But the other vital part of the argument is that you can get onto the ladder in the first place. From this start we can explore the recursive definition of sets, recursive functions and relations and recursive algorithms. 
+proving a truth for an infinite set
+
+
+Note: Induction versus Deduction
+Induction has two meanings. In common language induction is a way of generalizing over many observations. But in mathematics we use the word to describe a particular type of deductive reasoning that can prove that some properties of infinite sets must be true. We call this inductive reasoning. 
+
+
+
+\section {Mathematical Induction}
+\begin{notes}
+Do not confuse mathematical induction with inductive reasoning. In logic deductive reasoning uses rules of inference to draw conclusions from premises, whereas inductive reasong makes conclusions only supported, but not ensured, by evidence. Mathematical proofs, incuding arguments that use mathematical induction, are deductive, not inductive.
+\end{notes}
+
+\begin{definition}[Principle of Mathematical Induction]
+To prove that $P(n)$ is true for all positive integers $n$< where $P(n)$ is a propositional function, we complete two steps: \\
+BASIS STEP: Verify that $P(1)$ is true.\\
+INDUCTIVE STEP: Show that the conditional statement $P(k) \rightarrow P(k+1)$ is true for all positive integers $k$.
+\end{definition}
+ 
+    inductive hypothesis, ASSUME $P(k)$ is true. This is not the same as asserting it is true for all $k$ only that if the assumption holds that $P(k+1)$ must be true.
+Expressed as a rule of inference it looks like this:
+$$[P(1) \land \forall k (P(k) \rightarrow P(k+1))] \rightarrow \forall n P(n),$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  \subsection {Mathematical Induction}
+If a set is finite and we want to show some property holds for all elements, an iteration of testing for that property is always possible. But what if the set we examine is infinite? Many properties in mathematics are on infinite sets such as the set of integers or reals. Common examples are proving that for every positive integer $n$, $n! \leq n^n$. In general we are given some predicate $P$ (in this example that $n! \leq n^n$ and then asked to prove that this is a univeral property
+$$\forall P(n), n\in \mathbb{N} \cup {0} | n! \leq n^n$$
+For this and many other proofs of this kind we depend upon the Principle of Mathematical Induction. First prove that the proposition is true for the first element of the set. Then prove that if the propertly holds for some arbitrary element, $k$, that it must hold for the subsequent element, $k+1$. The principle gives you a new rule of inference that allows you to assert that the property must hold for every element of the set. More formally we state the principle of mathematical induction like this:\\
+Basis Step: Prove $P(1)$ \\
+Inductive Step: $P(k) \rightarrow P(k+1)$\\
+Rule of Inference: $[P(1) \land \forall P(k) \rightarrow P{k+1}] \rightarrow \forall n P(n)$\\
+
+We will call this the weak form of mathematical induction.
+
+Note: The proofs always use a different variable name in the proof from the principle to be proved. In the example we were asked to prove for all n. But the proof worked with variable k. This is to emphasize that we may not assume that $P(k)$ is true. But we can still use it in a conditional expression that if $P(k)$ is true and we show that the implication that $P(k+1)$ must also be true, it does not matter if the antecedent of the conditional statement is false since we only need to show that in all cases where it is true that the consequent must also be true. Ignoring this subtle point of logic causes many people to commit the fallacy of affirming the consequent, or begging the question.
+
+
+\section {Strong Induction and Well-Ordering}
+Sometimes it is not sufficient to show that the universal is valid for $n=1$ to establish a base case. Sometimes there are two or more initial conditions that must be proven. This gives us a new form of mathematical induction call the strong form:\\
+\begin{definition}[Strong Induction]
+To prove that $P(n)$ is true for all positiv eintegers $n$, where $P(n)$ is a propositional function, we complete two steps: \\
+BASIS STEP: We verify that the proposition $P(1)$ is true.\\
+INDUCTIVE STEP: We show that the conditional statement $[P(1) \land P(2) \land \dots P(k)] \rightarrow P(k+1)$ is true for all positive integers $k$.
+\end{definition}
+
+\begin{definition}[Well-Ordering Property]
+Every nonempty set of nonnegative integers has a least element.
+\end{definition}
+ 
+
+\section {Recursive Definitions and Structural Induction}
+ 
+  \subsection {Recursively Defined Functions}
+We can define functions using a recursive definition. Such definitions are called recursive or inductive definitions. Such functions are well defined since the value of the function at every integer is uniquely defined in a nonambiguous way.
+\begin{definition}[Recurseively Defined Function]
+We can define a function with the set of nonnegative integers as its domain with two steps:\\
+BASIS STEP: Specify the value of the function at zero (the base case)\\
+RECURSIVE STEP: Give a rule for finding its value at an integer from from its values at smaller integers.
+\end{definition}
+
+\begin{definition}
+The \textit{Fibonacci numbers} $f_0,f_1,f_2, \dots$ , are defined by the equaltions
+ $f_0=0$,\\
+$f_1=1$, and \\
+$f_n=f_{n-1} + f_{n-2}$ for all $n \ge 2$.
+\end{definition}
+
+
+
+
+
+
+
+
+  \subsection {Recursively Defined Sets and Structures}
+basis step, recursive step, exclusion rule
+An important use of recurseive definitions for sets is to define \textbf{well-formed formulae} of various types.
+
+\begin{definition} \label{WFF} [Well-Formed Formulae of Compound Propositions]  Well-Formed formulae of a simple propositional statements can be defined as follows:\\
+BASIS STEP: T, F, and $s$, where $s$ is a propositional variable, are well-formed formulae.\\
+RECURSIVE STEP: If $E$ and $F$ are well-formed formulae, then $(\neg E)$, $(E \land F)$, $(E \lor F)$, $(E \rightarrow F)$, and $(E \leftrightarrow F)$ are well-formed formulae.
+\end{definition}
+
+\begin{definition}[$\Sigma^*$]
+The set if all posible strings over the alphabet $\Sigma$ can be defined recursively by:\\
+BASIS STEP: $\lambda \in \Sigma^*$ where $\lambda$
+ is the empty string containing no symbols).\\
+RECURSIVE STEP: If $w \in \Sigma^*$ and $x \in \Sigma$, then the concatenation $wx \in \Sigma^*$.
+\end{definition}
+
+A structure cal also be defined using a recursive definition.
+
+\begin{definition}[The Set of Rooted Trees]
+The set of rooted trees, where a rooted tree consists of a set of vertices containing a distinguished vertex called the root, and edges connectinve these vertices, can be defined recursively by these steps:\\
+BASIS STEP: A single vertex $r$ is a rooted tree. \\
+RECURSIVE STEP: Suppose that $T_1,T_2, \dots T_n$ are disjoint rooted trees with roots $r_1,r_2, \dots r_n$, respectively. Then the graph formed by starting with a root $r$, which is not in any of the rooted trees $T_1,T_2, \dots,T_n$, and adding an edge from $r$ to each of the vertices $r_1,r_2, \dots r_n$, is also a rooted tree.
+\end{definition}
+
+  \subsection {Structural Induction}
+We can prove results about recursively defined sets using a form of mathematical induction. We do this by using a connection between recursively defined sets and mathematical induction.
+
+\begin{theorem}
+Let $S$ be a set recursively defined by:\\
+BASIS STEP: $3 \in S$ \\
+RECURSIVE STEP: If $x \in S$ and $y\in S$, then $x+y \in S$,
+then all elements of the set $S$ are multiples of 3.
+\end{theorem}
+
+\begin{definition} [Proof by Structural Induction]
+A proof by structural induction consists of two parts. These parts are:
+BASIS STEP: Show that the result holds for all elements specified in the basis steop of the recursive definition to be in the set. \\
+RECURSIVE STEP: Show that if the statement is true for each of the elements used to construct new elements in the recursive step of the definition, the result holds for these new elements.
+\end{definition}
+ 
+\begin{theorem}
+Show that the set of well-formed formulae in \ref{WFF} will always have an equal number of left and right parentheses using structural recursion.
+\end{theorem}
+
+
+
+\begin{definition}
+We define the height $h(T)$ of a full binary tree $T$ recursively.\\
+BASIS STEP: The height of the full binary tree $T$ consisting of only a root $r$ is $h(T)=0$.
+RECURSIVE STEP:  If $T_1$ and $T_2$ are full binary trees, then the full binary tree $T=T_1 \cdot T_2$ has height $h(T)=1 + max(h(T), h(T_2))$.
+\end{definition}
+
+\begin{theorem}
+If $T$ is a full binary tree and$ n(T$) defines the number of nodes in a full binary tree $T$, then $n(T) \le 2^{h(T)+1} -1$
+\end{theorem}
+
+  \subsection {Generalized Induction}
+\begin{definition}
+The \textbf{reversal} of a string $w$ is the string consisting of the symbols of the string in reverse order. The reversal of the string $w$ is denoted $w^R$.
+\end{definition}
+
+Ackermann's (ex 47)
+
+\section {Recursive Algorithms}
+  \begin {definition}
+An algorithm is called \textit{recursive} of iot solves a problem by reducing it to an instance of the same problem with smaller input.
+\end{definition}
+
+  \subsection {Proving Recursive Algorithms Correct}
+  \subsection {Recursion and Iteration}
+A recursive algorithm will compute a value by taking the function evaluation at the requested value and recursively computing smaller values. The function can also be computed by taking the value at the base case and applying the recursive rule until the requested value is determined, changing a recursive algorithm into an interative algorithm.
+
+  \subsection {The Merge Sort}
+
+\
+
+\newpage

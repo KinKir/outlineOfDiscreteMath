@@ -1,0 +1,440 @@
+\contentsline {chapter}{\numberline {1}The Foundations: Logic and Proofs}{1}
+\contentsline {section}{\numberline {1.1}Propositional Logic}{2}
+\contentsline {subsection}{\numberline {1.1.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1.2}Propositions}{2}
+\contentsline {subsection}{\numberline {1.1.3}Conditional Statements}{2}
+\contentsline {subsection}{\numberline {1.1.4}Truth Tables of Compound Propositions}{2}
+\contentsline {subsection}{\numberline {1.1.5}Precedence of Logical Operations}{2}
+\contentsline {subsection}{\numberline {1.1.6}Logic and Bit Operations}{2}
+\contentsline {section}{\numberline {1.2}Applications of Propositional Logic}{2}
+\contentsline {subsection}{\numberline {1.2.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.2.2}Translating English Sentences}{2}
+\contentsline {subsection}{\numberline {1.2.3}System Specifications}{2}
+\contentsline {subsection}{\numberline {1.2.4}Boolean Searches}{2}
+\contentsline {subsection}{\numberline {1.2.5}Logic Puzzles}{2}
+\contentsline {subsection}{\numberline {1.2.6}Logic Circuits}{2}
+\contentsline {section}{\numberline {1.3}Propositional Equivalences}{2}
+\contentsline {subsection}{\numberline {1.3.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.3.2}Logical Equivalneces}{2}
+\contentsline {subsection}{\numberline {1.3.3}Using De Morgan's Laws}{2}
+\contentsline {subsection}{\numberline {1.3.4}Constructing New Logical Equivalences}{2}
+\contentsline {subsection}{\numberline {1.3.5}Propositional Satisfiability}{2}
+\contentsline {subsection}{\numberline {1.3.6}Applications of Satisfiability}{2}
+\contentsline {subsection}{\numberline {1.3.7}Solving Satisfiability Problems}{2}
+\contentsline {section}{\numberline {1.4}Predicates and Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.4.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.4.2}Predicates}{2}
+\contentsline {subsection}{\numberline {1.4.3}Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.4.4}Quantifiers with Restricted Domains}{2}
+\contentsline {subsection}{\numberline {1.4.5}Precedence of Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.4.6}Binding Variables}{2}
+\contentsline {subsection}{\numberline {1.4.7}Logical Equivalences Involving Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.4.8}Negating Quantified Expressions}{2}
+\contentsline {subsection}{\numberline {1.4.9}Translating from English into Logical Expressions}{2}
+\contentsline {subsection}{\numberline {1.4.10}Using Quantifiers in System Specifications}{2}
+\contentsline {subsection}{\numberline {1.4.11}Examples from Lewis Carroll}{2}
+\contentsline {subsection}{\numberline {1.4.12}Logic Programming}{2}
+\contentsline {section}{\numberline {1.5}Nested Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.5.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.5.2}Understanding Statements Involving Nested Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.5.3}The Order of Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.5.4}Translating Mathematical Statements into Statements Involving Nested Quantifiers}{2}
+\contentsline {subsection}{\numberline {1.5.5}Translating from Nested Quantifiers into English}{2}
+\contentsline {subsection}{\numberline {1.5.6}Translating English Sentences into Logical Expressions}{2}
+\contentsline {subsection}{\numberline {1.5.7}Negating Nested Quantifiers}{2}
+\contentsline {section}{\numberline {1.6}Rules of Inference}{2}
+\contentsline {subsection}{\numberline {1.6.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.6.2}Valid Arguments in Propositional Logic}{2}
+\contentsline {subsection}{\numberline {1.6.3}Rules of Inference for Propositional Logic}{2}
+\contentsline {subsection}{\numberline {1.6.4}Using Rules of Inference to Build Arguments}{2}
+\contentsline {subsection}{\numberline {1.6.5}Resolution}{2}
+\contentsline {subsection}{\numberline {1.6.6}Fallacies}{2}
+\contentsline {subsection}{\numberline {1.6.7}Rules of Inference for Qualtified Statements}{2}
+\contentsline {subsection}{\numberline {1.6.8}Combining Rules of Inference for Propositions and Quantified Statements}{2}
+\contentsline {section}{\numberline {1.7}Introduction to Proofs}{2}
+\contentsline {subsection}{\numberline {1.7.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.7.2}Some Terminology}{2}
+\contentsline {subsection}{\numberline {1.7.3}Understanding How Theorems Are Stated}{2}
+\contentsline {subsection}{\numberline {1.7.4}Methods of Proving Theorems}{2}
+\contentsline {subsection}{\numberline {1.7.5}Direct Proofs}{2}
+\contentsline {subsection}{\numberline {1.7.6}Proof by Contraposition}{2}
+\contentsline {subsection}{\numberline {1.7.7}Proofs by Contradiction}{2}
+\contentsline {subsection}{\numberline {1.7.8}Mistakes in Proofs}{2}
+\contentsline {subsection}{\numberline {1.7.9}Just a Beginning}{2}
+\contentsline {section}{\numberline {1.8}Proof Methods and Strategy}{2}
+\contentsline {subsection}{\numberline {1.8.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.8.2}Exhaustive Proof and Proof by Cases}{2}
+\contentsline {subsection}{\numberline {1.8.3}Existence Proofs}{2}
+\contentsline {subsection}{\numberline {1.8.4}Uniqueness Proofs}{2}
+\contentsline {subsection}{\numberline {1.8.5}Proof Strategies}{2}
+\contentsline {subsection}{\numberline {1.8.6}Looking for Counterexamples}{2}
+\contentsline {subsection}{\numberline {1.8.7}Proof Strategy in Action}{2}
+\contentsline {subsection}{\numberline {1.8.8}Tilings}{2}
+\contentsline {subsection}{\numberline {1.8.9}The Role of Open Problems}{2}
+\contentsline {subsection}{\numberline {1.8.10}Additional Proof Methods}{2}
+\contentsline {chapter}{\numberline {2}Basic Structures: Sets, Functions, Sequences, Sums, and Matrices}{3}
+\contentsline {section}{\numberline {2.1}Sets}{4}
+\contentsline {subsection}{\numberline {2.1.1}Introduction}{4}
+\contentsline {subsubsection}{Definition of Set}{4}
+\contentsline {subsubsection}{Notation for Common Sets}{4}
+\contentsline {subsubsection}{Definition of Set Equality}{4}
+\contentsline {subsubsection}{The Empty Set}{4}
+\contentsline {subsection}{\numberline {2.1.2}Venn Diagrams}{4}
+\contentsline {subsection}{\numberline {2.1.3}Subsets}{4}
+\contentsline {subsubsection}{Definition of Subset}{4}
+\contentsline {subsection}{\numberline {2.1.4}The Size of a Set}{4}
+\contentsline {subsubsection}{Definition of Set Cardinality}{4}
+\contentsline {subsection}{\numberline {2.1.5}Power Sets}{4}
+\contentsline {subsection}{\numberline {2.1.6}Cartesian Products}{4}
+\contentsline {subsection}{\numberline {2.1.7}Using Set Notation with Quantifiers}{4}
+\contentsline {subsection}{\numberline {2.1.8}Truth Sets and Quantifiers}{4}
+\contentsline {section}{\numberline {2.2}Set Operations}{4}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{4}
+\contentsline {subsection}{\numberline {2.2.2}Set Identities}{4}
+\contentsline {subsection}{\numberline {2.2.3}Generalized Unions and Intersections}{4}
+\contentsline {subsection}{\numberline {2.2.4}Computer Representation of Sets}{4}
+\contentsline {section}{\numberline {2.3}Functions}{4}
+\contentsline {subsection}{\numberline {2.3.1}Introduction}{4}
+\contentsline {subsection}{\numberline {2.3.2}One-to-One and Onto Functions}{4}
+\contentsline {subsection}{\numberline {2.3.3}Inverse Functions and Compositions of Functions}{4}
+\contentsline {subsection}{\numberline {2.3.4}The Graphs of Functions}{4}
+\contentsline {subsection}{\numberline {2.3.5}Partial Functions}{4}
+\contentsline {section}{\numberline {2.4}Sequences and Summations}{4}
+\contentsline {subsection}{\numberline {2.4.1}Introduction}{4}
+\contentsline {subsection}{\numberline {2.4.2}Sequences}{4}
+\contentsline {subsection}{\numberline {2.4.3}Recurrence Relations}{4}
+\contentsline {subsection}{\numberline {2.4.4}Special Integer Sequences}{4}
+\contentsline {subsection}{\numberline {2.4.5}Summations}{4}
+\contentsline {section}{\numberline {2.5}Cardinality of Sets}{4}
+\contentsline {subsection}{\numberline {2.5.1}Introduction}{4}
+\contentsline {subsection}{\numberline {2.5.2}Countable Sets}{4}
+\contentsline {subsection}{\numberline {2.5.3}An Uncountable Set}{4}
+\contentsline {section}{\numberline {2.6}Matrices}{4}
+\contentsline {subsection}{\numberline {2.6.1}Introduction}{4}
+\contentsline {subsection}{\numberline {2.6.2}Matrix Arithmetic}{4}
+\contentsline {subsection}{\numberline {2.6.3}Transposes and Powers of Matrices}{4}
+\contentsline {subsection}{\numberline {2.6.4}Zero-One Matrices}{4}
+\contentsline {chapter}{\numberline {3}Algorithms}{5}
+\contentsline {section}{\numberline {3.1}Algorithms}{6}
+\contentsline {subsection}{\numberline {3.1.1}Introduction}{6}
+\contentsline {subsection}{\numberline {3.1.2}Searching Algorithms}{6}
+\contentsline {subsection}{\numberline {3.1.3}Sorting}{6}
+\contentsline {subsection}{\numberline {3.1.4}Greedy Algorithms}{6}
+\contentsline {subsection}{\numberline {3.1.5}The Halting Problem}{6}
+\contentsline {section}{\numberline {3.2}The Growth of Functions}{6}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{6}
+\contentsline {subsection}{\numberline {3.2.2}Big-O Notation}{6}
+\contentsline {subsection}{\numberline {3.2.3}Big-O Estimates for Some Important Functions}{6}
+\contentsline {subsection}{\numberline {3.2.4}The Growth of Cobinations of Functions}{6}
+\contentsline {subsection}{\numberline {3.2.5}Big-Omega and Big-Theta Notation}{6}
+\contentsline {section}{\numberline {3.3}Complexity of Algorithms}{6}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{6}
+\contentsline {subsection}{\numberline {3.3.2}Time Complexity}{6}
+\contentsline {subsection}{\numberline {3.3.3}Complexity of Matrix Multiplication}{6}
+\contentsline {subsection}{\numberline {3.3.4}Algorithmic Paradigms}{6}
+\contentsline {subsection}{\numberline {3.3.5}Understanding the Complexity of Algorithms}{6}
+\contentsline {chapter}{\numberline {4}Number Theory and Cryptography}{7}
+\contentsline {section}{\numberline {4.1}Divisibility and Modular Arithmetic}{8}
+\contentsline {subsection}{\numberline {4.1.1}Introduction}{8}
+\contentsline {subsection}{\numberline {4.1.2}Division}{8}
+\contentsline {subsection}{\numberline {4.1.3}The Division Algorithm}{8}
+\contentsline {subsection}{\numberline {4.1.4}Modular Arithmetic}{8}
+\contentsline {subsection}{\numberline {4.1.5}Arithmetic Modulo $m$}{8}
+\contentsline {section}{\numberline {4.2}Integer Representation and Algorithms}{8}
+\contentsline {subsection}{\numberline {4.2.1}Introduction}{8}
+\contentsline {subsection}{\numberline {4.2.2}Representations of Integers}{8}
+\contentsline {subsection}{\numberline {4.2.3}Algorithms for Integer Operations}{8}
+\contentsline {subsection}{\numberline {4.2.4}Modular Exponentiation}{8}
+\contentsline {section}{\numberline {4.3}Primes and Greates Common Divisors}{8}
+\contentsline {subsection}{\numberline {4.3.1}Introduction}{8}
+\contentsline {subsection}{\numberline {4.3.2}Primes}{8}
+\contentsline {subsection}{\numberline {4.3.3}Trial Division}{8}
+\contentsline {subsection}{\numberline {4.3.4}The Sieve of Eratosthenes}{8}
+\contentsline {subsection}{\numberline {4.3.5}Conjectures and Open Problems About Primes}{8}
+\contentsline {subsection}{\numberline {4.3.6}Greatest Common Divisors and Least Common Multiples}{8}
+\contentsline {subsection}{\numberline {4.3.7}The Euclidean Algorithm}{8}
+\contentsline {section}{\numberline {4.4}Solving Congruences}{8}
+\contentsline {subsection}{\numberline {4.4.1}Introduction}{8}
+\contentsline {subsection}{\numberline {4.4.2}Linear Congruences}{8}
+\contentsline {subsection}{\numberline {4.4.3}The Chinese Remainder Theorem}{8}
+\contentsline {subsection}{\numberline {4.4.4}Computer Arithmetic with Large Integers}{8}
+\contentsline {subsection}{\numberline {4.4.5}Fermat's Little Theorem}{8}
+\contentsline {subsection}{\numberline {4.4.6}Pseudoprimes}{8}
+\contentsline {subsection}{\numberline {4.4.7}Primitive Roots and Discrete Logarithms}{8}
+\contentsline {section}{\numberline {4.5}Applications of Congruences}{8}
+\contentsline {subsection}{\numberline {4.5.1}Hashing Functions}{8}
+\contentsline {subsection}{\numberline {4.5.2}Pseudorandom Numbers}{8}
+\contentsline {subsection}{\numberline {4.5.3}Check Digits}{8}
+\contentsline {section}{\numberline {4.6}Cryptography}{8}
+\contentsline {subsection}{\numberline {4.6.1}Introduction}{8}
+\contentsline {subsection}{\numberline {4.6.2}Classical Cryptography}{8}
+\contentsline {subsection}{\numberline {4.6.3}PublicKey Cryptography}{8}
+\contentsline {subsection}{\numberline {4.6.4}The RSA Cryptosystem}{8}
+\contentsline {subsection}{\numberline {4.6.5}RSA Encryption}{8}
+\contentsline {subsection}{\numberline {4.6.6}RSA Dcryption}{8}
+\contentsline {subsection}{\numberline {4.6.7}RSA as a Public Key System}{8}
+\contentsline {subsection}{\numberline {4.6.8}Cryptographic Protocols}{8}
+\contentsline {chapter}{\numberline {5}Induction and Recursion}{9}
+\contentsline {section}{\numberline {5.1}Mathematical Induction}{10}
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{10}
+\contentsline {subsection}{\numberline {5.1.2}Mathematical Induction}{10}
+\contentsline {subsection}{\numberline {5.1.3}Why Mathematical Induction is Valid}{10}
+\contentsline {subsection}{\numberline {5.1.4}The Good and the Bad of Mathematical Induction}{10}
+\contentsline {subsection}{\numberline {5.1.5}Examples of Proofs by Mathematical Induction}{10}
+\contentsline {subsection}{\numberline {5.1.6}Mistaken Proofs By Mathematical Induction}{10}
+\contentsline {subsection}{\numberline {5.1.7}Guidelines for Proofs by Mathematical Induction}{10}
+\contentsline {section}{\numberline {5.2}Strong Induction and Well-Ordering}{10}
+\contentsline {subsection}{\numberline {5.2.1}Introduction}{10}
+\contentsline {subsection}{\numberline {5.2.2}Strong Induction}{10}
+\contentsline {subsection}{\numberline {5.2.3}Examples of Proofs Using Strong Induction}{10}
+\contentsline {subsection}{\numberline {5.2.4}Using Strong Induction in Computation Geometry}{10}
+\contentsline {subsection}{\numberline {5.2.5}Proofs Using the Well-Ordered Property}{10}
+\contentsline {section}{\numberline {5.3}Recursive Definitions and Structural Induction}{10}
+\contentsline {subsection}{\numberline {5.3.1}Introduction}{10}
+\contentsline {subsection}{\numberline {5.3.2}Recursively Defined Functions}{10}
+\contentsline {subsection}{\numberline {5.3.3}Recursively Defined Sets and Structures}{10}
+\contentsline {subsection}{\numberline {5.3.4}Structural Induction}{10}
+\contentsline {subsection}{\numberline {5.3.5}Generalized Induction}{10}
+\contentsline {section}{\numberline {5.4}Recursive Algorithms}{10}
+\contentsline {subsection}{\numberline {5.4.1}Induction}{10}
+\contentsline {subsection}{\numberline {5.4.2}Proving Recursive Algorithms Correct}{10}
+\contentsline {subsection}{\numberline {5.4.3}Recursion and Iteration}{10}
+\contentsline {subsection}{\numberline {5.4.4}The Merge Sort}{10}
+\contentsline {section}{\numberline {5.5}Program Correctness}{10}
+\contentsline {subsection}{\numberline {5.5.1}Introduction}{10}
+\contentsline {subsection}{\numberline {5.5.2}Program Verification}{10}
+\contentsline {subsection}{\numberline {5.5.3}Rules of Inference}{10}
+\contentsline {subsection}{\numberline {5.5.4}Conditional Statements}{10}
+\contentsline {subsection}{\numberline {5.5.5}Loop Invariants}{10}
+\contentsline {chapter}{\numberline {6}Counting}{11}
+\contentsline {section}{\numberline {6.1}The Basics of Counting}{12}
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{12}
+\contentsline {subsection}{\numberline {6.1.2}Basic Counting Principles}{12}
+\contentsline {subsection}{\numberline {6.1.3}More Complex Counting Problems}{12}
+\contentsline {subsection}{\numberline {6.1.4}The Subtraction Rule (Inclusion-Exclusion for Two Sets)}{12}
+\contentsline {subsection}{\numberline {6.1.5}The Division Rule}{12}
+\contentsline {subsection}{\numberline {6.1.6}Tree Diagrams}{12}
+\contentsline {section}{\numberline {6.2}The Pigeonhole Principle}{12}
+\contentsline {subsection}{\numberline {6.2.1}Introduction}{12}
+\contentsline {subsection}{\numberline {6.2.2}The Generalized Pigeonhole Principle}{12}
+\contentsline {subsection}{\numberline {6.2.3}Some Elegant Applications of the Pigeonhold Principle}{12}
+\contentsline {section}{\numberline {6.3}Permutations and Combinations}{12}
+\contentsline {subsection}{\numberline {6.3.1}Introduction}{12}
+\contentsline {subsection}{\numberline {6.3.2}Permutations}{12}
+\contentsline {subsection}{\numberline {6.3.3}Combinations}{12}
+\contentsline {section}{\numberline {6.4}Binomial Coefficients and Indentities}{12}
+\contentsline {subsection}{\numberline {6.4.1}The Binomial Theorem}{12}
+\contentsline {subsection}{\numberline {6.4.2}Pascal's Identify and Triangle}{12}
+\contentsline {subsection}{\numberline {6.4.3}Other Identities Involving Binomial Coefficients}{12}
+\contentsline {section}{\numberline {6.5}Generalized Permutations and Combinations}{12}
+\contentsline {subsection}{\numberline {6.5.1}Introduction}{12}
+\contentsline {subsection}{\numberline {6.5.2}Permutations with Repetition}{12}
+\contentsline {subsection}{\numberline {6.5.3}Combinations with Repetition}{12}
+\contentsline {subsection}{\numberline {6.5.4}Permutations with Indistinguishable Objects}{12}
+\contentsline {subsection}{\numberline {6.5.5}Distribuing Objects into Boxes}{12}
+\contentsline {section}{\numberline {6.6}Generating Permutations and Combinations}{12}
+\contentsline {subsection}{\numberline {6.6.1}Introduction}{12}
+\contentsline {subsection}{\numberline {6.6.2}Generating Permutations}{12}
+\contentsline {subsection}{\numberline {6.6.3}Generating Combinations}{12}
+\contentsline {chapter}{\numberline {7}Discrete Probability}{13}
+\contentsline {section}{\numberline {7.1}An Introduction to Discrete Probability}{14}
+\contentsline {subsection}{\numberline {7.1.1}Introduction}{14}
+\contentsline {subsection}{\numberline {7.1.2}Finite Probability}{14}
+\contentsline {subsection}{\numberline {7.1.3}Probabilities of Complements and Unions of Events}{14}
+\contentsline {subsection}{\numberline {7.1.4}Probabilistic Reasoning}{14}
+\contentsline {section}{\numberline {7.2}Probability Theory}{14}
+\contentsline {subsection}{\numberline {7.2.1}Introduction}{14}
+\contentsline {subsection}{\numberline {7.2.2}Assigning Probabilities}{14}
+\contentsline {subsection}{\numberline {7.2.3}Probabilities of Complements and Unions of Events}{14}
+\contentsline {subsection}{\numberline {7.2.4}Conditional Probability}{14}
+\contentsline {subsection}{\numberline {7.2.5}Independence}{14}
+\contentsline {subsection}{\numberline {7.2.6}Bernoulli Trials and the Binomial Distribution}{14}
+\contentsline {subsection}{\numberline {7.2.7}Random Variables}{14}
+\contentsline {subsection}{\numberline {7.2.8}The Birthday Problem}{14}
+\contentsline {subsection}{\numberline {7.2.9}Monte Carlo Algorithms}{14}
+\contentsline {subsection}{\numberline {7.2.10}The Probabilistic Method}{14}
+\contentsline {section}{\numberline {7.3}Bayes' Theorem}{14}
+\contentsline {subsection}{\numberline {7.3.1}Introduction}{14}
+\contentsline {subsection}{\numberline {7.3.2}Bayes' Theorem}{14}
+\contentsline {subsection}{\numberline {7.3.3}Bayesian Spam Filters}{14}
+\contentsline {section}{\numberline {7.4}Expected Value and Variance}{14}
+\contentsline {subsection}{\numberline {7.4.1}Introduction}{14}
+\contentsline {subsection}{\numberline {7.4.2}Expected Values}{14}
+\contentsline {subsection}{\numberline {7.4.3}Linearity of Expectations}{14}
+\contentsline {subsection}{\numberline {7.4.4}Average-Case Computational Complexity}{14}
+\contentsline {subsection}{\numberline {7.4.5}The Geometric Distribution}{14}
+\contentsline {subsection}{\numberline {7.4.6}Independent Random Variables}{14}
+\contentsline {subsection}{\numberline {7.4.7}Variance}{14}
+\contentsline {chapter}{\numberline {8}Advanced Counting Techniques}{15}
+\contentsline {section}{\numberline {8.1}Application of Recurrence Relations}{16}
+\contentsline {subsection}{\numberline {8.1.1}Introduction}{16}
+\contentsline {subsection}{\numberline {8.1.2}Modeling With Recurrence Relations}{16}
+\contentsline {subsection}{\numberline {8.1.3}Algorithms and Recurrence Relations}{16}
+\contentsline {section}{\numberline {8.2}Solving Linear Recurrence Relations}{16}
+\contentsline {subsection}{\numberline {8.2.1}Introduction}{16}
+\contentsline {subsection}{\numberline {8.2.2}Solving Linear Homogeneous Recurrence Relations with Constant Coefficients}{16}
+\contentsline {subsection}{\numberline {8.2.3}Linear Nonhomogeneous Recurrence Relations with Constant Coefficients}{16}
+\contentsline {section}{\numberline {8.3}Divide-and-Conquer Algorithms and Recurrence Relations}{16}
+\contentsline {subsection}{\numberline {8.3.1}Introduction}{16}
+\contentsline {subsection}{\numberline {8.3.2}Divide-and-Conquer Recurrence Relations}{16}
+\contentsline {section}{\numberline {8.4}Generating Functions}{16}
+\contentsline {subsection}{\numberline {8.4.1}Introduction}{16}
+\contentsline {subsection}{\numberline {8.4.2}Useful Facts About Power Series}{16}
+\contentsline {subsection}{\numberline {8.4.3}Counting Problems and Generating Functions}{16}
+\contentsline {subsection}{\numberline {8.4.4}Using Generating Functions to Solve Recurrence Relations}{16}
+\contentsline {subsection}{\numberline {8.4.5}Proving Indentities via Generating Functions}{16}
+\contentsline {section}{\numberline {8.5}Inclusion-Exclusion}{16}
+\contentsline {subsection}{\numberline {8.5.1}Introduction}{16}
+\contentsline {subsection}{\numberline {8.5.2}The Principle of Inclusion-Exclusion}{16}
+\contentsline {section}{\numberline {8.6}Applications of Inclusion-Exclusion}{16}
+\contentsline {subsection}{\numberline {8.6.1}Introduction}{16}
+\contentsline {subsection}{\numberline {8.6.2}An Alternative Form of Inclusion-Exclusion}{16}
+\contentsline {subsection}{\numberline {8.6.3}The Sieve of Eratosthenes}{16}
+\contentsline {subsection}{\numberline {8.6.4}The Number of Onto Functions}{16}
+\contentsline {subsection}{\numberline {8.6.5}Derangements}{16}
+\contentsline {chapter}{\numberline {9}Relations}{17}
+\contentsline {section}{\numberline {9.1}Relations and Their Properties}{18}
+\contentsline {subsection}{\numberline {9.1.1}Introduction}{18}
+\contentsline {subsection}{\numberline {9.1.2}Functions as Relations}{18}
+\contentsline {subsection}{\numberline {9.1.3}Relations on a Set}{18}
+\contentsline {subsection}{\numberline {9.1.4}Combining Relations}{18}
+\contentsline {section}{\numberline {9.2}$n$-ary Relations and Their Applications}{18}
+\contentsline {subsection}{\numberline {9.2.1}Introduction}{18}
+\contentsline {subsection}{\numberline {9.2.2}$n$-ary Relations}{18}
+\contentsline {subsection}{\numberline {9.2.3}Databases and Relations}{18}
+\contentsline {subsection}{\numberline {9.2.4}Operations on $n$-ary Relations}{18}
+\contentsline {subsection}{\numberline {9.2.5}SQL}{18}
+\contentsline {section}{\numberline {9.3}Representing Relations}{18}
+\contentsline {subsection}{\numberline {9.3.1}Introduction}{18}
+\contentsline {subsection}{\numberline {9.3.2}Representing Relations Using Matrices}{18}
+\contentsline {subsection}{\numberline {9.3.3}Representing Relations Using Digraphs}{18}
+\contentsline {section}{\numberline {9.4}Closure of Relations}{18}
+\contentsline {subsection}{\numberline {9.4.1}Introduction}{18}
+\contentsline {subsection}{\numberline {9.4.2}Closures}{18}
+\contentsline {subsection}{\numberline {9.4.3}Paths in Directed Graphs}{18}
+\contentsline {subsection}{\numberline {9.4.4}Transitive Closures}{18}
+\contentsline {subsection}{\numberline {9.4.5}Warshall's Algorithm}{18}
+\contentsline {section}{\numberline {9.5}Equivalence Relations}{18}
+\contentsline {subsection}{\numberline {9.5.1}Introduction}{18}
+\contentsline {subsection}{\numberline {9.5.2}Equivalence Relations}{18}
+\contentsline {subsection}{\numberline {9.5.3}Equivalence Classes}{18}
+\contentsline {subsection}{\numberline {9.5.4}Equivalence Classes and Partitions}{18}
+\contentsline {section}{\numberline {9.6}Partial Orderings}{18}
+\contentsline {subsection}{\numberline {9.6.1}Introduction}{18}
+\contentsline {subsection}{\numberline {9.6.2}Lexicographic Order}{18}
+\contentsline {subsection}{\numberline {9.6.3}Hasse Diagrams}{18}
+\contentsline {subsection}{\numberline {9.6.4}Maximal and Minimal Elements}{18}
+\contentsline {subsection}{\numberline {9.6.5}Lattices}{18}
+\contentsline {subsection}{\numberline {9.6.6}Topological Sorting}{18}
+\contentsline {chapter}{\numberline {10}Graphs}{19}
+\contentsline {section}{\numberline {10.1}Graphs and Graph Models}{20}
+\contentsline {subsection}{\numberline {10.1.1}Graph Models}{20}
+\contentsline {section}{\numberline {10.2}Graph Terminology and Special Types of Graphs}{20}
+\contentsline {subsection}{\numberline {10.2.1}Introduction}{20}
+\contentsline {subsection}{\numberline {10.2.2}Basic Terminology}{20}
+\contentsline {subsection}{\numberline {10.2.3}Bipartite Graphs}{20}
+\contentsline {subsection}{\numberline {10.2.4}Bipartite Graphs and Matchings}{20}
+\contentsline {subsection}{\numberline {10.2.5}Some Applications of Special Types of Graphs}{20}
+\contentsline {subsection}{\numberline {10.2.6}New Graphs from Old}{20}
+\contentsline {section}{\numberline {10.3}Representing Graphs and Graph Isomorphism}{20}
+\contentsline {subsection}{\numberline {10.3.1}Introduction}{20}
+\contentsline {subsection}{\numberline {10.3.2}Representing Graphs}{20}
+\contentsline {subsection}{\numberline {10.3.3}Adjacency Matrices}{20}
+\contentsline {subsection}{\numberline {10.3.4}Incidence Matrices}{20}
+\contentsline {subsection}{\numberline {10.3.5}Determing whether Two Simple Graphs are Isomorphic}{20}
+\contentsline {section}{\numberline {10.4}Connectivity}{20}
+\contentsline {subsection}{\numberline {10.4.1}Introduction}{20}
+\contentsline {subsection}{\numberline {10.4.2}Paths}{20}
+\contentsline {subsection}{\numberline {10.4.3}Connectedness in Unidirected Graphs}{20}
+\contentsline {subsection}{\numberline {10.4.4}How Connected is a Graph?}{20}
+\contentsline {subsection}{\numberline {10.4.5}Connectedness in Directed Graphs}{20}
+\contentsline {subsection}{\numberline {10.4.6}Paths and Isomorphism}{20}
+\contentsline {subsection}{\numberline {10.4.7}Counting Paths Between Vertices}{20}
+\contentsline {section}{\numberline {10.5}Euler and Hamilton Paths}{20}
+\contentsline {subsection}{\numberline {10.5.1}Introduction}{20}
+\contentsline {subsection}{\numberline {10.5.2}Euler Paths and Circuits}{20}
+\contentsline {subsection}{\numberline {10.5.3}Hamilton Paths and Circuits}{20}
+\contentsline {subsection}{\numberline {10.5.4}Applications of Hamilton Circuits}{20}
+\contentsline {section}{\numberline {10.6}Shortest-Path Problems}{20}
+\contentsline {subsection}{\numberline {10.6.1}Introduction}{20}
+\contentsline {subsection}{\numberline {10.6.2}A Shortest-Path Algorithm}{20}
+\contentsline {subsection}{\numberline {10.6.3}The Traveling Salesperson Problem}{20}
+\contentsline {section}{\numberline {10.7}Planar Graphs}{20}
+\contentsline {subsection}{\numberline {10.7.1}Introduction}{20}
+\contentsline {subsection}{\numberline {10.7.2}Kuratowski's Theorem}{20}
+\contentsline {section}{\numberline {10.8}Graph Coloring}{20}
+\contentsline {subsection}{\numberline {10.8.1}Introduction}{20}
+\contentsline {subsection}{\numberline {10.8.2}Applications of Graph Colorings}{20}
+\contentsline {chapter}{\numberline {11}Trees}{21}
+\contentsline {section}{\numberline {11.1}Introduction to Trees}{22}
+\contentsline {subsection}{\numberline {11.1.1}Rooted Trees}{22}
+\contentsline {subsection}{\numberline {11.1.2}Trees as Models}{22}
+\contentsline {subsection}{\numberline {11.1.3}Properties of Trees}{22}
+\contentsline {section}{\numberline {11.2}Applications of Trees}{22}
+\contentsline {subsection}{\numberline {11.2.1}Introduction}{22}
+\contentsline {subsection}{\numberline {11.2.2}Binary Search Trees}{22}
+\contentsline {subsection}{\numberline {11.2.3}Decision Trees}{22}
+\contentsline {subsection}{\numberline {11.2.4}Game Trees}{22}
+\contentsline {section}{\numberline {11.3}Tree Traversal}{22}
+\contentsline {subsection}{\numberline {11.3.1}Introduction}{22}
+\contentsline {subsection}{\numberline {11.3.2}Universal Address Systems}{22}
+\contentsline {subsection}{\numberline {11.3.3}Traversal Algorithms}{22}
+\contentsline {subsection}{\numberline {11.3.4}Infix, Prefix, and Postfix Notation}{22}
+\contentsline {section}{\numberline {11.4}Spanning Trees}{22}
+\contentsline {subsection}{\numberline {11.4.1}Introduction}{22}
+\contentsline {subsection}{\numberline {11.4.2}Depth-First Search}{22}
+\contentsline {subsection}{\numberline {11.4.3}Breadth-First Search}{22}
+\contentsline {subsection}{\numberline {11.4.4}Backtracking Applications}{22}
+\contentsline {subsection}{\numberline {11.4.5}Depth-First Search in Directed Graphs}{22}
+\contentsline {section}{\numberline {11.5}Minimum Spanning Trees}{22}
+\contentsline {subsection}{\numberline {11.5.1}Introduction}{22}
+\contentsline {subsection}{\numberline {11.5.2}Algorithms for Minimum Spanning Trees}{22}
+\contentsline {chapter}{\numberline {12}Boolean Algebra}{23}
+\contentsline {section}{\numberline {12.1}Boolean Functions}{24}
+\contentsline {subsection}{\numberline {12.1.1}Introduction}{24}
+\contentsline {subsection}{\numberline {12.1.2}Boolean Expressions and Boolean Functions}{24}
+\contentsline {subsection}{\numberline {12.1.3}Identities of Boolean Algebra}{24}
+\contentsline {subsection}{\numberline {12.1.4}Duality}{24}
+\contentsline {subsection}{\numberline {12.1.5}The Abstract Definition of a Boolean Algebra}{24}
+\contentsline {section}{\numberline {12.2}Representing Boolean Functions}{24}
+\contentsline {subsection}{\numberline {12.2.1}Sum-of-Products Expansions}{24}
+\contentsline {subsection}{\numberline {12.2.2}Functional Completeness}{24}
+\contentsline {section}{\numberline {12.3}Logic Gates}{24}
+\contentsline {subsection}{\numberline {12.3.1}Introduction}{24}
+\contentsline {subsection}{\numberline {12.3.2}Combinations of Gates}{24}
+\contentsline {subsection}{\numberline {12.3.3}Examples of Circuits}{24}
+\contentsline {subsection}{\numberline {12.3.4}Adders}{24}
+\contentsline {section}{\numberline {12.4}Minimization of Circuits}{24}
+\contentsline {subsection}{\numberline {12.4.1}Introduction}{24}
+\contentsline {subsection}{\numberline {12.4.2}Karnaugh Maps}{24}
+\contentsline {subsection}{\numberline {12.4.3}Don't Care Conditions}{24}
+\contentsline {subsection}{\numberline {12.4.4}The Quine-McCluskey Method}{24}
+\contentsline {chapter}{\numberline {13}Modeling Computation}{25}
+\contentsline {section}{\numberline {13.1}Languages and Grammars}{26}
+\contentsline {subsection}{\numberline {13.1.1}Introduction}{26}
+\contentsline {subsection}{\numberline {13.1.2}Phrase-Structure Grammars}{26}
+\contentsline {subsection}{\numberline {13.1.3}Types of Phrase-Structure Grammars}{26}
+\contentsline {subsection}{\numberline {13.1.4}Derivation Trees}{26}
+\contentsline {subsection}{\numberline {13.1.5}Backus-Naur Form}{26}
+\contentsline {section}{\numberline {13.2}Finite-State Machines with Output}{26}
+\contentsline {subsection}{\numberline {13.2.1}Introduction}{26}
+\contentsline {subsection}{\numberline {13.2.2}Finite-State Machines with Outputs}{26}
+\contentsline {section}{\numberline {13.3}Finite-State Machines with No Output}{26}
+\contentsline {subsection}{\numberline {13.3.1}Introduction}{26}
+\contentsline {subsection}{\numberline {13.3.2}Set of Strings}{26}
+\contentsline {subsection}{\numberline {13.3.3}Finite-State Automata}{26}
+\contentsline {subsection}{\numberline {13.3.4}Language Recognition by Finite-State Machines}{26}
+\contentsline {subsection}{\numberline {13.3.5}Nondeterministic Finite-State Automata}{26}
+\contentsline {section}{\numberline {13.4}Language Recognition}{26}
+\contentsline {subsection}{\numberline {13.4.1}Introduction}{26}
+\contentsline {subsection}{\numberline {13.4.2}Kleene's Theorem}{26}
+\contentsline {subsection}{\numberline {13.4.3}Regular Sets and Regular Grammars}{26}
+\contentsline {subsection}{\numberline {13.4.4}More Powerful Types of Machines}{26}
+\contentsline {section}{\numberline {13.5}Turing Machines}{26}
+\contentsline {subsection}{\numberline {13.5.1}Introduction}{26}
+\contentsline {subsection}{\numberline {13.5.2}Definition of Turing Machines}{26}
+\contentsline {subsection}{\numberline {13.5.3}Using Turing Machines to Recognize Sets}{26}
+\contentsline {subsection}{\numberline {13.5.4}Computing Functions with Turing Machines}{26}
+\contentsline {subsection}{\numberline {13.5.5}Different Types of Turing Machines}{26}
+\contentsline {subsection}{\numberline {13.5.6}The Church-Turing Thesis}{26}
+\contentsline {subsection}{\numberline {13.5.7}Computational Complexity, Computability, and Decidability}{26}

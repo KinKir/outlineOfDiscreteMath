@@ -1,0 +1,126 @@
+                      %%% ALGORITHMS %%%
+\chapter {Algorithms}
+Relative to many texts on discrete math, this chapter is sparse because most of the material overlaps with a standard undergraduate course that will focus on algorithms and their analysis. The emphasis for these notes is simply the mathematical concept and its relationship to the structures needed to approach computation from a theoretical perspective.
+
+Function definitions must determine a unique value for the argument(s) given. While mathematical formulas are common, they are not required. What IS required is a definite process by which one finds the value in the co-domain to return as the function.
+
+Consider that the argument does not need to be a single value. It can be a structure such as a sequence. The function can be on that sequence and return another sequence that possess some property. The classic example is a sort of that sequence. The input is some perhaps unsorted sequence and what is returned has the property that each element of the sequence is less than or equal to the ones later in the sequence. This is the beginning point for the study of those processes which defines functions like sort.
+
+A pre-requisite to this class is at least one programming course so the student is expected to understand the conventions of a procedural language used to describe an algorithm. There is no universal way to describe an algorithm since programming languages will often use different ways of doing the same thing. The conventions of this book come from Rosen which represents a common notation that uses conventions from mathematics as well as programming languages.
+
+\begin{definition}[Definition of Algorithm from Rosen]
+An \textit{algorithm} is a finite set of precise instructions for performing a computation or for solving a problem.
+\end{definition}
+\begin{definition}[Definition of Algorithm from Schaums]
+An algorithm $M$ is a finite step-by-step list of well-defined instructions for solving a particular problem, for instance to evaluate a function $f$ given an argument $X$ where $X$ may be any mathematical structure. Frequently there may be more than one algorithm to computer $f(X)$ and we need tools to analyze the differences between the different algorithms.
+\end{definition}
+
+\begin{definition}[PseudoCode]\index{pseudocode}
+Pseudo code is a form of non-fiction prose that attempts to provide a rigorous definition of an algorithm using a natural language. Computer languages such as C or Algol are formal languages that conform to a syntax that allows them to be translated into computer code. But when discussing algorithms the overhead of those formal languages does not help understanding. 
+
+The assignment statement will perform a binding of a value to a variable, called a state transition. Most computer languages use the equal sign (=) to indicate assignment. That is unfortunate since it is easy to confuse it with the equality relationship  operator which must use a different operator (typically == in many popular languages). Historically there are two other symbols used to indicate assignment including ":=" and "$\leftarrow$". 
+
+Originally algorithms only needed to be understood by a human who had the job title of computer. The other statements should be easily understood by a student who has taken a programming course. 
+\end{definition}
+
+\begin{algorithm}
+\caption{Finding the Maximum Element in a Finite Sequence}\label{base b}
+\begin{algorithmic}[1]
+\Procedure{max}{$a_1,a_2, \dots a_n$: integers}
+\State $max\gets a_1$
+\For{$i\gets 2, n$}\Comment{We have the answer if r is 0}
+\If {$max < a_i$}
+   
+    \State $max\gets a_i$
+    \EndIf
+\EndFor\label{xxx} \\
+\Return{$max$}
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+\begin{algorithm}
+\caption{Constructing Base $b$ Expansions}\label{base b}
+\begin{algorithmic}[1]
+\Procedure{base b expansion}{$n$: positive integer}\Comment{The g.c.d. of a and b}
+\State $q\gets n$
+\State $k\gets 0$
+\While{$q\not=0$}\Comment{We have the answer if r is 0}
+\State $a_k\gets q \bmod b$
+\State $q\gets \lfloor q/b\rfloor$
+\State $k\gets k+1$
+\EndWhile\label{xxx} \\
+\Return{$(a_{k-1} \dots a_1a_0)_b$}
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\section{Searching Algorithms}
+\section{Sorting Algorithms}
+
+
+\section{Topological Sort Algorithm}
+\begin{algorithm}
+\caption{Topological Sorting}\label{TopologicalSort}
+\begin{algorithmic}[1]
+\Procedure{topological sort}{$(S,\preceq)$: a finite poset}\Comment{}
+\State $k\gets 1$
+\While( $S \neq \emptyset$)
+  \State $a_k \gets$ a minimal element of $S$  \Comment{guaranteed to exist by Lemma \ref{ExistenceOfMinimalElementInAPoset} }
+  \State $S \gets S - \{a_k\}$
+  \State $k \gets k+1$
+\EndWhile
+\Return{$a_1,a_2, \dots ,a_n$}  \Comment {a compatible total ordering of $S$}
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+
+\section{The Halting Problem}
+As a practical matter we know that programs that do not halt are of little use when it comes to computing functions. At a theorectical level it is interesting to consider whether it would be possible to construct a compiler that could recognize a program that would not halt. This leads us to this famous theorem of computer science.
+
+\begin{theorem}[Halting Problem]
+There is no algorithm that accepts an algorithm and some input data set as input and determines whether it will halt.
+\end{theorem}
+
+Every function has a method by which a value can be calculated. This often comes from calculus for many of the functions used in engineering but not always. For example we have a way of calculating the factorial function that uses only basic arithmetic. Regardless of how it is calculated you will note that they all have very specific steps that must be executed in some order that are well defined. This is called an algorithm. Computer science began with the proof that any well defined algorithm could be mechanically executed by a machine instead of a human. The term computer originally meant a human using computation tools like an adding machine to execute the steps needed to determine the values. These values of the functions were published in books and the function was evaluated by a lookup in a table instead of on-the-spot calculation.
+
+Not all functions take in single parameters. Some, like the permutation function, will take in a large number of values and produce some permutation of those numbers. Sorting is just such a function. Clearly the work done by the sorting function will depend on the size of the input set which we call n. 
+
+For practical reasons, we are interested in how long an algorithm will take given a particular set of numbers as input. This becomes a different function T for this algorithm which has as input the size of the input set, n. The time a specific algorithm will work on a particular input set before giving a result is the functionT(n). You might naively assume that T(n) will always result in the same value for any size input but you would be wrong. The T function will vary with both the size but also the specific input. For example some sort algorithms will have T(n) in the category of O(n) for sorted input but O(n**2) for out of order input. The big O of the algorithm will vary with the algorithm and its input.
+
+While we are sometimes interested in the best-case scenario for the algorithm and its input set, we most often are more interested in the worst case scenario. What will be the big O for this algorithm over all the possible inputs it could get? This defines an upper bound for the complexity of this algorithm. Since the worst and best case for an algorithm may have functions from different categories, the best case may be in a different big O category. When analyzing algorithms, we call this the lower bound for that function on T(n). We give this the name Omega. When we find one category that contains both the upper and lower bound, we call this the Theta of that function. When we find a Theta for an algorithm we say we have found the tight upper bound 
+
+We defer the further study of algorithmic complexity to your course on Algorithms in your undergrad program.
+
+
+\section {Analysis of Algorithms}
+This section overlaps with a course usually required on the analysis of algorithms. We attempt to limit the material here to only the most basic concepts. 
+  \subsection{The Time Function of an Algorithm}
+  We want to analyze how long an algorithm takes, called the time complexity of the algorithm. First note that many algorithms will use different numbers of steps depending upon the input they are given. So this is not a fixed function from algorithm to time but instead a range of values. The time might be computable for specific algorithm and a specific input but in general what we want is the range of possible times for this algorithm. Of all the possible ways we can analyze the performance of an algorithm the most basic is to look at the relationship between the ``size'' of the input and the time ignoring all other considerations. We represent this ``size'' as $N$. We call the time function $T$ so we want to perform asymptotic analysis on the function $T(N)$. You might naively expect that a given algorithm will have a fixed relationship to the size of the input but that is wrong. Sorting algorithms in particular will have different time functions for the same size input but input in different orders. This complicates the analysis of the time function of an algorithm and gives us a range of functions.
+  
+We know that a computer does not perform all instructions with the same amount of time. A division function will be slower than a move instruction. But the relationship between the time and the instruction can be set at a max and all instructions treated as the same length. This is not useful for predicting how long the algorithm will take but it can be used to determine the order of magnitude since the fixed multiple will not impact the growth. With this in mind, we simply count how many times each instruction is executed by the algorithm with no consideration for the actual time the computer will take with each one. 
+
+Given this range, we might be interested in the best possible time, the worst possible time and/or the average time this algorithm will use over some set of input values. The most frequently analyzed is the worst case time and we present how that is described. We will use asymptotic function analysis (chapter on functions) to do this. 
+
+While it is true that the time required to execute an instruction varies with the machine and even within a machine the instruction to be executed. For example a divide instruction is longer than a move. But this relationship is fixed, for the most part, and can be ignored for the purposes of asymptotic analysis. 
+
+The most common analysis is relative to the economic reality of time. But a comparable analysis can be done for space requirements too. In fact any resource needed to run the algorithm can be subjected to analysis in a comparable way.
+
+Since time functions will vary in their order based on the input, we are often asked to consider the best case and worst case performance of these algorithms when presented with input. It is common with sorting algorithms that the best case and worst case will be of different orders. It is often trivial to say that a given function $g$ is of a higher order, for example a quartic polynomial will beat a quadratic, but we often want to know the LEAST upper bound function. To do the analysis we must have a concept of a lower bound as well. We use \textbf{Big-Omega (big-$\Omega$) notation}. If, and only if, we find a single function that serves as both an upper and lower bound, we say that the function is Big Theta.
+
+
+As a practical matter we usually state big-O, big-Omega and big-Theta in terms of a limited number of reference functions that come up  frequently in algorithms.
+
+Determining the dominant factor of a polynomial which determines the order is easy.
+
+We stop our discussion of algorithmic analysis here and leave it to a course devoted to this subject.
+\newpage
+
+
+
+
