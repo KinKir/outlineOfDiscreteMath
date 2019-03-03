@@ -139,3 +139,147 @@
 \contentsline {section}{\numberline {6.4}The Halting Problem}{56}
 \contentsline {section}{\numberline {6.5}Analysis of Algorithms}{58}
 \contentsline {subsection}{\numberline {6.5.1}The Time Function of an Algorithm}{58}
+\contentsline {chapter}{\numberline {7}Integers}{61}
+\contentsline {section}{\numberline {7.1}Division}{61}
+\contentsline {section}{\numberline {7.2}Modular Arithmetic}{62}
+\contentsline {subsection}{\numberline {7.2.1}Residue Classes}{62}
+\contentsline {section}{\numberline {7.3}Cryptology}{63}
+\contentsline {section}{\numberline {7.4}Primes and Greatest Common Divisors}{63}
+\contentsline {subsection}{\numberline {7.4.1}Greatest Common Divisors and Least Common Multiples}{63}
+\contentsline {section}{\numberline {7.5}Integers and Algorithms}{64}
+\contentsline {subsection}{\numberline {7.5.1}Representation of Integers}{64}
+\contentsline {subsection}{\numberline {7.5.2}Modular Exponentiation}{64}
+\contentsline {section}{\numberline {7.6}The Euclidean Algorithm}{65}
+\contentsline {section}{\numberline {7.7}Linear Congruences}{65}
+\contentsline {section}{\numberline {7.8}The Chinese Remainder Theorem}{65}
+\contentsline {section}{\numberline {7.9}Computer Arithmetic with Large Integers}{66}
+\contentsline {subsection}{\numberline {7.9.1}Pseudo Primes}{66}
+\contentsline {section}{\numberline {7.10}Cryptography}{67}
+\contentsline {subsection}{\numberline {7.10.1}Public Key Cryptography}{67}
+\contentsline {subsection}{\numberline {7.10.2}The RSA Cryptosystem}{68}
+\contentsline {chapter}{\numberline {8}Induction and Recursion}{71}
+\contentsline {section}{\numberline {8.1}Mathematical Induction}{71}
+\contentsline {subsection}{\numberline {8.1.1}Mathematical Induction}{72}
+\contentsline {section}{\numberline {8.2}Strong Induction and Well-Ordering}{72}
+\contentsline {section}{\numberline {8.3}Recursive Definitions and Structural Induction}{73}
+\contentsline {subsection}{\numberline {8.3.1}Recursively Defined Functions}{73}
+\contentsline {subsection}{\numberline {8.3.2}Recursively Defined Sets and Structures}{73}
+\contentsline {subsection}{\numberline {8.3.3}Structural Induction}{73}
+\contentsline {subsection}{\numberline {8.3.4}Generalized Induction}{74}
+\contentsline {section}{\numberline {8.4}Recursive Algorithms}{74}
+\contentsline {subsection}{\numberline {8.4.1}Proving Recursive Algorithms Correct}{74}
+\contentsline {subsection}{\numberline {8.4.2}Recursion and Iteration}{74}
+\contentsline {subsection}{\numberline {8.4.3}The Merge Sort}{74}
+\contentsline {chapter}{\numberline {9}Counting}{75}
+\contentsline {section}{\numberline {9.1}The Basics of Counting}{75}
+\contentsline {subsection}{\numberline {9.1.1}Basic Counting Principles}{75}
+\contentsline {subsection}{\numberline {9.1.2}More Complex Counting Problems}{75}
+\contentsline {subsection}{\numberline {9.1.3}The Inclusion-Exclusion Principle}{75}
+\contentsline {subsection}{\numberline {9.1.4}Tree Diagrams}{75}
+\contentsline {section}{\numberline {9.2}The Pigeonhole Pinciple}{75}
+\contentsline {subsection}{\numberline {9.2.1}The Generalized Pigeonhold Principle}{75}
+\contentsline {subsection}{\numberline {9.2.2}Some Elegant Applications of the Pigeonhold Principle}{75}
+\contentsline {section}{\numberline {9.3}Permutations and Combinations}{76}
+\contentsline {subsection}{\numberline {9.3.1}Permutations}{76}
+\contentsline {subsection}{\numberline {9.3.2}Combinations}{76}
+\contentsline {section}{\numberline {9.4}Binomial Coefficients}{76}
+\contentsline {subsection}{\numberline {9.4.1}The Binomial Theorem}{76}
+\contentsline {subsection}{\numberline {9.4.2}Pascal's Identity and Triangle}{77}
+\contentsline {subsection}{\numberline {9.4.3}Some Other Identities of the Binomial Coefficients}{77}
+\contentsline {section}{\numberline {9.5}Generalize Permutations and Combinations}{77}
+\contentsline {subsection}{\numberline {9.5.1}Permutations with Repetition}{77}
+\contentsline {subsection}{\numberline {9.5.2}Combinations with Repetition}{78}
+\contentsline {subsection}{\numberline {9.5.3}Permutations with Indistinguishable Objects}{78}
+\contentsline {subsection}{\numberline {9.5.4}Counting Combinations when Distributing Objects into Boxes}{78}
+\contentsline {subsubsection}{Combinations of Distinguishable objects into distinguishable boxes}{78}
+\contentsline {subsubsection}{Combinations of Indistinguishable Objects and Distinguishable Boxes}{79}
+\contentsline {subsubsection}{Combinations of Distinguishable Objects and Indistinguishable Boxes}{79}
+\contentsline {subsubsection}{Combinations of Indistinguishable Objects and Indistinguishable Boxes}{79}
+\contentsline {section}{\numberline {9.6}Generating Permutations and Combinations}{79}
+\contentsline {subsection}{\numberline {9.6.1}Generating Permutations}{79}
+\contentsline {subsection}{\numberline {9.6.2}Generating Combinations}{79}
+\contentsline {section}{\numberline {9.7}other material, schaum's??}{79}
+\contentsline {chapter}{\numberline {10}Advanced Counting}{81}
+\contentsline {section}{\numberline {10.1}Recurrence Relations}{81}
+\contentsline {subsection}{\numberline {10.1.1}Modeling with Recurrence Relations}{81}
+\contentsline {section}{\numberline {10.2}Solving Linear Recurrence Relations}{81}
+\contentsline {subsection}{\numberline {10.2.1}Types of Recurrence Relations}{81}
+\contentsline {subsection}{\numberline {10.2.2}Solving Linear Homogeneous Recurrence Relations with Constant Coefficients}{82}
+\contentsline {subsubsection}{Example 6.10 from Schaum's}{82}
+\contentsline {section}{\numberline {10.3}Divide-and-Conquer Algorithms and Recurrence Relations}{82}
+\contentsline {section}{\numberline {10.4}Generating Functions}{83}
+\contentsline {subsection}{\numberline {10.4.1}Counting Problems and Generating Functions}{83}
+\contentsline {section}{\numberline {10.5}Inclusion-Exclusion}{83}
+\contentsline {subsection}{\numberline {10.5.1}The Principle of Inclusion-Exclusion}{83}
+\contentsline {subsection}{\numberline {10.5.2}Applications of Inclusion-Exclusion}{83}
+\contentsline {subsection}{\numberline {10.5.3}An Alternative Form of Inclusion-Exclusion}{83}
+\contentsline {subsection}{\numberline {10.5.4}The Sieve of Eratosthenes}{83}
+\contentsline {subsection}{\numberline {10.5.5}The Number of Onto Functions}{83}
+\contentsline {subsection}{\numberline {10.5.6}Derangements}{83}
+\contentsline {subsection}{\numberline {10.5.7}Natural Number Functions}{83}
+\contentsline {subsection}{\numberline {10.5.8}Limits on Computability}{83}
+\contentsline {subsubsection}{Not Everything is Countable}{83}
+\contentsline {subsubsection}{There are uncountably many languages over a finite alphabet}{83}
+\contentsline {subsection}{\numberline {10.5.9}Inductively Defined Infinite Sets}{83}
+\contentsline {chapter}{\numberline {11}Boolean Algebras}{85}
+\contentsline {section}{\numberline {11.1}Definitions}{85}
+\contentsline {section}{\numberline {11.2}Boolean Functions}{85}
+\contentsline {subsection}{\numberline {11.2.1}Boolean Expressions and Boolean Functions}{86}
+\contentsline {subsection}{\numberline {11.2.2}Identities of Boolean Algebra}{86}
+\contentsline {subsection}{\numberline {11.2.3}Principle of Duality}{86}
+\contentsline {subsection}{\numberline {11.2.4}Abstract Definition of a Boolean Algebra}{87}
+\contentsline {section}{\numberline {11.3}Representing Boolean Functions}{87}
+\contentsline {subsection}{\numberline {11.3.1}Sum-of-Products Expansions}{87}
+\contentsline {subsection}{\numberline {11.3.2}Functional Completeness}{87}
+\contentsline {section}{\numberline {11.4}Logic Gates}{87}
+\contentsline {subsection}{\numberline {11.4.1}Combinations of Gates}{87}
+\contentsline {subsection}{\numberline {11.4.2}Adders}{87}
+\contentsline {subsection}{\numberline {11.4.3}Minimization of Circuits}{87}
+\contentsline {subsection}{\numberline {11.4.4}combinational circuits versus sequential circuits}{87}
+\contentsline {subsection}{\numberline {11.4.5}Karnaugh Maps and Quine-McCluskey Method}{87}
+\contentsline {chapter}{\numberline {12}Graphs}{89}
+\contentsline {section}{\numberline {12.1}Graphs and Graph Models}{89}
+\contentsline {section}{\numberline {12.2}Graph Terminology and Special Types of Graphs}{89}
+\contentsline {section}{\numberline {12.3}Representing Graphs and Graph Isomorphism}{91}
+\contentsline {section}{\numberline {12.4}Connectivity}{91}
+\contentsline {section}{\numberline {12.5}Euler Paths and Circuits}{91}
+\contentsline {section}{\numberline {12.6}Hamilton Paths and Circuits}{92}
+\contentsline {section}{\numberline {12.7}Shortest Path Problem}{93}
+\contentsline {section}{\numberline {12.8}Planar Graphs}{93}
+\contentsline {section}{\numberline {12.9}Graph Coloring}{94}
+\contentsline {chapter}{\numberline {13}Trees}{95}
+\contentsline {section}{\numberline {13.1}Properties of Trees}{95}
+\contentsline {chapter}{\numberline {14}Discrete Probability}{97}
+\contentsline {section}{\numberline {14.1}An Introduction to Discrete Probability}{97}
+\contentsline {subsection}{\numberline {14.1.1}Finite Probability}{97}
+\contentsline {subsection}{\numberline {14.1.2}The Probability of Combinations of Events}{97}
+\contentsline {subsection}{\numberline {14.1.3}Probabilistic Reasoning}{97}
+\contentsline {section}{\numberline {14.2}Probability Theory}{97}
+\contentsline {subsection}{\numberline {14.2.1}Assigning Probabilities}{97}
+\contentsline {subsection}{\numberline {14.2.2}Combinations of Events}{97}
+\contentsline {subsection}{\numberline {14.2.3}Conditional Probability}{97}
+\contentsline {subsection}{\numberline {14.2.4}Independence}{97}
+\contentsline {subsection}{\numberline {14.2.5}Bernoulli Trials and the Binomial Distrubution}{97}
+\contentsline {subsection}{\numberline {14.2.6}The Birthday Problem}{97}
+\contentsline {subsection}{\numberline {14.2.7}Monte Carlo Algorithms}{97}
+\contentsline {subsection}{\numberline {14.2.8}The Probabilistic Method}{97}
+\contentsline {chapter}{\numberline {15}Computation}{101}
+\contentsline {section}{\numberline {15.1}Languages and Grammars}{101}
+\contentsline {subsection}{\numberline {15.1.1}Phrase-Structured Grammars}{101}
+\contentsline {subsection}{\numberline {15.1.2}Context Free and Context Sensitive Grammars}{101}
+\contentsline {subsection}{\numberline {15.1.3}Regular Languages and their Notation}{101}
+\contentsline {subsection}{\numberline {15.1.4}Derivation Trees}{101}
+\contentsline {subsection}{\numberline {15.1.5}Backus-Naur Form}{101}
+\contentsline {section}{\numberline {15.2}Finite State Machines}{101}
+\contentsline {subsection}{\numberline {15.2.1}FSM with no output}{102}
+\contentsline {subsubsection}{Set of Strings}{102}
+\contentsline {subsubsection}{Finite-State Automata}{102}
+\contentsline {subsubsection}{Language Recognition by FSA}{102}
+\contentsline {subsubsection}{Non-deterministic FSA}{102}
+\contentsline {subsection}{\numberline {15.2.2}FSM with output}{102}
+\contentsline {section}{\numberline {15.3}Language Recognition}{102}
+\contentsline {subsection}{\numberline {15.3.1}Regular Sets}{102}
+\contentsline {subsection}{\numberline {15.3.2}Kleene's Theorem}{102}
+\contentsline {subsection}{\numberline {15.3.3}Regular Sets and Regular Grammars}{102}
+\contentsline {subsection}{\numberline {15.3.4}Beyond Regular Languages and FSMs}{102}
+\contentsline {chapter}{Bibliography}{105}

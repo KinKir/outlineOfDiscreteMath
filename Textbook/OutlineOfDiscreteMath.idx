@@ -102,3 +102,28 @@
 \indexentry{lattice}{53}
 \indexentry{topological sort}{53}
 \indexentry{pseudocode}{55}
+\indexentry{congruence}{62}
+\indexentry{residue class}{62}
+\indexentry{congruence artihmetic}{63}
+\indexentry{congruence classes}{63}
+\indexentry{congruence arithmetic}{63}
+\indexentry{prime number}{63}
+\indexentry{greatest common divisor}{63}
+\indexentry{GCD}{63}
+\indexentry{least common multiple}{63}
+\indexentry{LCM}{63}
+\indexentry{Euler phi function}{64}
+\indexentry{B\IeC {\'e}zout's theorem}{65}
+\indexentry{Boolean variable}{85}
+\indexentry{Boolean expression}{85}
+\indexentry{Boolean function}{85}
+\indexentry{logic gate}{87}
+\indexentry{graph}{89}
+\indexentry{vertex}{89}
+\indexentry{edge}{89}
+\indexentry{simple graph}{89}
+\indexentry{multigraph}{89}
+\indexentry{directed graph}{89}
+\indexentry{digraph}{89}
+\indexentry{handshaking theorem}{90}
+\indexentry{bipartite graph}{90}

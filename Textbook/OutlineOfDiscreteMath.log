@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  28 FEB 2019 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 MAR 2019 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,24 +1101,25 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 1.
  [3
 
-] [4] [5])
+] [4] [5] [6] [7] [8])
 \tf@toc=\write4
 \openout4 = `OutlineOfDiscreteMath.toc'.
 
- [6] (./OutlineOfDiscreteMath.lof)
+ [9] [10
+
+]
+(./OutlineOfDiscreteMath.lof)
 \tf@lof=\write5
 \openout5 = `OutlineOfDiscreteMath.lof'.
 
-
-[7
-
-] [8
+ [11] [12
 
 ] (./OutlineOfDiscreteMath.lot)
 \tf@lot=\write6
 \openout6 = `OutlineOfDiscreteMath.lot'.
 
- (./Introduction.tex [9] [10
+
+(./Introduction.tex [13] [14
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1127,8 +1128,7 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 13.39188pt on input line 12.
- [11]
-[12]) [13] [14
+ [15] [16]) [17] [18
 
 ] (./Logic.tex
 Chapter 1.
@@ -1147,14 +1147,14 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 [1
 
 ]
-<illustrations/Table-1-1-1-Negation.png, id=59, 256.96pt x 156.585pt>
+<illustrations/Table-1-1-1-Negation.png, id=72, 256.96pt x 156.585pt>
 File: illustrations/Table-1-1-1-Negation.png Graphic file (type png)
 <use illustrations/Table-1-1-1-Negation.png>
 Package pdftex.def Info: illustrations/Table-1-1-1-Negation.png  used on input 
 line 36.
 (pdftex.def)             Requested size: 108.405pt x 66.05913pt.
  [2 <./illustrations/Table-1-1-1-Negation.png>]
-<illustrations/Table-1-1-9-TableOfBitwiseLogic.png, id=65, 490.83376pt x 164.61
+<illustrations/Table-1-1-9-TableOfBitwiseLogic.png, id=78, 490.83376pt x 164.61
 5pt>
 File: illustrations/Table-1-1-9-TableOfBitwiseLogic.png Graphic file (type png)
 
@@ -1162,7 +1162,7 @@ File: illustrations/Table-1-1-9-TableOfBitwiseLogic.png Graphic file (type png)
 Package pdftex.def Info: illustrations/Table-1-1-9-TableOfBitwiseLogic.png  use
 d on input line 88.
 (pdftex.def)             Requested size: 216.81pt x 72.71214pt.
-<illustrations/PrecedenceOfLogicalOperators.png, id=66, 967.615pt x 714.67pt>
+<illustrations/PrecedenceOfLogicalOperators.png, id=79, 967.615pt x 714.67pt>
 File: illustrations/PrecedenceOfLogicalOperators.png Graphic file (type png)
 <use illustrations/PrecedenceOfLogicalOperators.png>
 Package pdftex.def Info: illustrations/PrecedenceOfLogicalOperators.png  used o
@@ -1170,7 +1170,7 @@ n input line 98.
 (pdftex.def)             Requested size: 108.405pt x 80.0643pt.
  [3 <./illustrations/Table-1-1-9-TableOfBitwiseLogic.png>]
 <illustrations/Table-1-6-7-LogicalEquivalencesInvolvingConditionalStatements.pn
-g, id=71, 317.185pt x 349.305pt>
+g, id=84, 317.185pt x 349.305pt>
 File: illustrations/Table-1-6-7-LogicalEquivalencesInvolvingConditionalStatemen
 ts.png Graphic file (type png)
 <use illustrations/Table-1-6-7-LogicalEquivalencesInvolvingConditionalStatement
@@ -1179,7 +1179,7 @@ Package pdftex.def Info: illustrations/Table-1-6-7-LogicalEquivalencesInvolving
 ConditionalStatements.png  used on input line 146.
 (pdftex.def)             Requested size: 216.81pt x 238.77145pt.
 <illustrations/Table-1-6-8-LogicalEquivalencesInvolvingBiconditonalStatements.p
-ng, id=72, 340.27126pt x 261.97874pt>
+ng, id=85, 340.27126pt x 261.97874pt>
 File: illustrations/Table-1-6-8-LogicalEquivalencesInvolvingBiconditonalStateme
 nts.png Graphic file (type png)
 <use illustrations/Table-1-6-8-LogicalEquivalencesInvolvingBiconditonalStatemen
@@ -1187,7 +1187,7 @@ ts.png>
 Package pdftex.def Info: illustrations/Table-1-6-8-LogicalEquivalencesInvolving
 BiconditonalStatements.png  used on input line 152.
 (pdftex.def)             Requested size: 216.81pt x 166.92628pt.
-<illustrations/Table-1-3-6-LogicalEquivalences.png, id=73, 468.75125pt x 614.29
+<illustrations/Table-1-3-6-LogicalEquivalences.png, id=86, 468.75125pt x 614.29
 5pt>
 File: illustrations/Table-1-3-6-LogicalEquivalences.png Graphic file (type png)
 
@@ -1200,8 +1200,8 @@ le-1-6-7-LogicalEquivalencesInvolvingConditionalStatements.png> <./illustration
 s/Table-1-6-8-LogicalEquivalencesInvolvingBiconditonalStatements.png>] [6 <./il
 lustrations/Table-1-3-6-LogicalEquivalences.png>]
 [7] [8]
-<illustrations/DeMorgansForQuantifiedExpressions.png, id=93, 648.4225pt x 122.4
-575pt>
+<illustrations/DeMorgansForQuantifiedExpressions.png, id=106, 648.4225pt x 122.
+4575pt>
 File: illustrations/DeMorgansForQuantifiedExpressions.png Graphic file (type pn
 g)
 <use illustrations/DeMorgansForQuantifiedExpressions.png>
@@ -1209,8 +1209,8 @@ Package pdftex.def Info: illustrations/DeMorgansForQuantifiedExpressions.png  u
 sed on input line 282.
 (pdftex.def)             Requested size: 216.81pt x 40.9455pt.
  [9]
-<illustrations/Table-1-4-1-QuantificationOfTwoVariables.png, id=97, 661.47125pt
- x 270.00874pt>
+<illustrations/Table-1-4-1-QuantificationOfTwoVariables.png, id=110, 661.47125p
+t x 270.00874pt>
 File: illustrations/Table-1-4-1-QuantificationOfTwoVariables.png Graphic file (
 type png)
 <use illustrations/Table-1-4-1-QuantificationOfTwoVariables.png>
@@ -1219,7 +1219,7 @@ Package pdftex.def Info: illustrations/Table-1-4-1-QuantificationOfTwoVariables
 (pdftex.def)             Requested size: 216.81pt x 88.49751pt.
  [10 <./illustrations/DeMorgansForQuantifiedExpressions.png> <./illustrations/T
 able-1-4-1-QuantificationOfTwoVariables.png>]
-<illustrations/Table-1-5-1-QuantificationsOfTwoVariables.png, id=103, 797.98125
+<illustrations/Table-1-5-1-QuantificationsOfTwoVariables.png, id=116, 797.98125
 pt x 317.185pt>
 File: illustrations/Table-1-5-1-QuantificationsOfTwoVariables.png Graphic file 
 (type png)
@@ -1233,7 +1233,7 @@ s.png  used on input line 305.
 ]
 Chapter 2.
 [13]
-<illustrations/Table-1-6-1-RulesOfInference.png, id=115, 679.53876pt x 740.7675
+<illustrations/Table-1-6-1-RulesOfInference.png, id=128, 679.53876pt x 740.7675
 pt>
 File: illustrations/Table-1-6-1-RulesOfInference.png Graphic file (type png)
 <use illustrations/Table-1-6-1-RulesOfInference.png>
@@ -1241,7 +1241,7 @@ Package pdftex.def Info: illustrations/Table-1-6-1-RulesOfInference.png  used o
 n input line 39.
 (pdftex.def)             Requested size: 361.34999pt x 393.90477pt.
  [14] [15 <./illustrations/Table-1-6-1-RulesOfInference.png>] [16]
-<illustrations/Table-1-6-2-RulesOfInferenceForQuantifiedStatements.png, id=126,
+<illustrations/Table-1-6-2-RulesOfInferenceForQuantifiedStatements.png, id=139,
  776.9025pt x 472.76625pt>
 File: illustrations/Table-1-6-2-RulesOfInferenceForQuantifiedStatements.png Gra
 phic file (type png)
@@ -1256,7 +1256,7 @@ Chapter 3.
 [25
 
 ] [26] [27]
-<illustrations/Figure-2-2-1-VennDiagramOfAUnionB.png, id=165, 778.91pt x 417.56
+<illustrations/Figure-2-2-1-VennDiagramOfAUnionB.png, id=178, 778.91pt x 417.56
 pt>
 File: illustrations/Figure-2-2-1-VennDiagramOfAUnionB.png Graphic file (type pn
 g)
@@ -1264,7 +1264,7 @@ g)
 Package pdftex.def Info: illustrations/Figure-2-2-1-VennDiagramOfAUnionB.png  u
 sed on input line 163.
 (pdftex.def)             Requested size: 216.81pt x 116.22787pt.
-<illustrations/Figure-2-2-2-VennDiagramOfTheIntersectionOfAandB.png, id=166, 10
+<illustrations/Figure-2-2-2-VennDiagramOfTheIntersectionOfAandB.png, id=179, 10
 41.8925pt x 559.08875pt>
 File: illustrations/Figure-2-2-2-VennDiagramOfTheIntersectionOfAandB.png Graphi
 c file (type png)
@@ -1274,7 +1274,7 @@ nOfAandB.png  used on input line 175.
 (pdftex.def)             Requested size: 216.81pt x 116.33719pt.
  [28 <./illustrations/Figure-2-2-1-VennDiagramOfAUnionB.png> <./illustrations/F
 igure-2-2-2-VennDiagramOfTheIntersectionOfAandB.png>]
-<illustrations/Table-2-2-1-SetIdentities.png, id=172, 498.86375pt x 643.40375pt
+<illustrations/Table-2-2-1-SetIdentities.png, id=185, 498.86375pt x 643.40375pt
 >
 File: illustrations/Table-2-2-1-SetIdentities.png Graphic file (type png)
 <use illustrations/Table-2-2-1-SetIdentities.png>
@@ -1285,7 +1285,7 @@ nput line 207.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29 <./illustrations/Table-2-2-1-SetIdentities.png>]
-<illustrations/Figure-2-1-1-VennDiagramOfVowels.png, id=177, 771.88374pt x 445.
+<illustrations/Figure-2-1-1-VennDiagramOfVowels.png, id=189, 771.88374pt x 445.
 665pt>
 File: illustrations/Figure-2-1-1-VennDiagramOfVowels.png Graphic file (type png
 )
@@ -1299,7 +1299,7 @@ Chapter 4.
 [33
 
 ] [34]
-<illustrations/Figure-2-3-5-TypesOfCorrespondences.png, id=196, 1367.1075pt x 3
+<illustrations/Figure-2-3-5-TypesOfCorrespondences.png, id=210, 1367.1075pt x 3
 22.20375pt>
 File: illustrations/Figure-2-3-5-TypesOfCorrespondences.png Graphic file (type 
 png)
@@ -1309,7 +1309,7 @@ Package pdftex.def Info: illustrations/Figure-2-3-5-TypesOfCorrespondences.png
 (pdftex.def)             Requested size: 469.75499pt x 110.71301pt.
  [35 <./illustrations/Figure-2-3-5-TypesOfCorrespondences.png>]
 [36]
-<illustrations/Table-2-3-1-PropertiesOfFloorAndCeilingFunctions.png, id=205, 56
+<illustrations/Table-2-3-1-PropertiesOfFloorAndCeilingFunctions.png, id=217, 56
 1.09625pt x 436.63126pt>
 File: illustrations/Table-2-3-1-PropertiesOfFloorAndCeilingFunctions.png Graphi
 c file (type png)
@@ -1317,14 +1317,14 @@ c file (type png)
 Package pdftex.def Info: illustrations/Table-2-3-1-PropertiesOfFloorAndCeilingF
 unctions.png  used on input line 161.
 (pdftex.def)             Requested size: 216.81pt x 168.71317pt.
-<illustrations/asciifull.png, id=206, 590.205pt x 493.845pt>
+<illustrations/asciifull.png, id=218, 590.205pt x 493.845pt>
 File: illustrations/asciifull.png Graphic file (type png)
 <use illustrations/asciifull.png>
 Package pdftex.def Info: illustrations/asciifull.png  used on input line 174.
 (pdftex.def)             Requested size: 361.34999pt x 302.36024pt.
  [37 <./illustrations/Table-2-3-1-PropertiesOfFloorAndCeilingFunctions.png>] [3
 8 <./illustrations/asciifull.png>]
-<illustrations/Example_for_a_composition_of_two_functions.png, id=215, 641.3962
+<illustrations/Example_for_a_composition_of_two_functions.png, id=228, 641.3962
 6pt x 770.88pt>
 File: illustrations/Example_for_a_composition_of_two_functions.png Graphic file
  (type png)
@@ -1338,7 +1338,7 @@ Overfull \hbox (3.11774pt too wide) in paragraph at lines 224--224
 d an-a-lytic ge-om-e-try| 
  []
 
-<illustrations/Figure-3-2-3-GrowthOfFunctions.png, id=221, 670.505pt x 657.4562
+<illustrations/Figure-3-2-3-GrowthOfFunctions.png, id=234, 670.505pt x 657.4562
 5pt>
 File: illustrations/Figure-3-2-3-GrowthOfFunctions.png Graphic file (type png)
 <use illustrations/Figure-3-2-3-GrowthOfFunctions.png>
@@ -1346,7 +1346,7 @@ Package pdftex.def Info: illustrations/Figure-3-2-3-GrowthOfFunctions.png  used
  on input line 229.
 (pdftex.def)             Requested size: 289.07999pt x 283.45308pt.
 [40 <./illustrations/Figure-3-2-3-GrowthOfFunctions.png>] [41]
-<illustrations/Table-2-4-1-SomeUsefulSequences.png, id=230, 1322.9425pt x 540.0
+<illustrations/Table-2-4-1-SomeUsefulSequences.png, id=242, 1322.9425pt x 540.0
 175pt>
 File: illustrations/Table-2-4-1-SomeUsefulSequences.png Graphic file (type png)
 
@@ -1361,7 +1361,7 @@ Chapter 5.
 [47
 
 ] [48] [49] [50] [51]
-<illustrations/Figure-9-6-2-ConstructionOfHaaseDiagram.png, id=263, 981.6675pt 
+<illustrations/Figure-9-6-2-ConstructionOfHaaseDiagram.png, id=276, 981.6675pt 
 x 671.50874pt>
 File: illustrations/Figure-9-6-2-ConstructionOfHaaseDiagram.png Graphic file (t
 ype png)
@@ -1402,7 +1402,111 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57]
-[58] [59]) [60
+[58] [59]) (./Integers.tex [60
+
+]
+Chapter 7.
+[61] [62] [63] [64] [65] [66] [67] [68] [69]) (./InductionAndRecursion.tex
+[70
+
+]
+Chapter 8.
+[71]
+Underfull \vbox (badness 7832) has occurred while \output is active []
+
+ [72]
+[73] [74]) (./Counting.tex
+Chapter 9.
+[75
+
+]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 75.
+
+[76] [77] [78] [79] [80]) (./AdvancedCounting.tex
+Chapter 10.
+[81
+
+] [82] [83] [84]) (./BooleanAlgebras.tex
+Chapter 11.
+<illustrations/TableOfPropositionalOperators.png, id=383, 1008.76875pt x 620.31
+75pt>
+File: illustrations/TableOfPropositionalOperators.png Graphic file (type png)
+<use illustrations/TableOfPropositionalOperators.png>
+Package pdftex.def Info: illustrations/TableOfPropositionalOperators.png  used 
+on input line 24.
+(pdftex.def)             Requested size: 361.34999pt x 222.2067pt.
+[85
+
+]
+<illustrations/Table-12-1-3-BooleanFunctionsOfTwoVariables.png, id=388, 806.011
+25pt x 151.56625pt>
+File: illustrations/Table-12-1-3-BooleanFunctionsOfTwoVariables.png Graphic fil
+e (type png)
+<use illustrations/Table-12-1-3-BooleanFunctionsOfTwoVariables.png>
+Package pdftex.def Info: illustrations/Table-12-1-3-BooleanFunctionsOfTwoVariab
+les.png  used on input line 33.
+(pdftex.def)             Requested size: 361.34999pt x 67.94977pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86 <./illustrations/TableOfPropositionalOperators.png> <./illustrations/Table
+-12-1-3-BooleanFunctionsOfTwoVariables.png>]
+<illustrations/Figure-12-3-1-BasicGates.png, id=393, 680.5425pt x 111.41624pt>
+File: illustrations/Figure-12-3-1-BasicGates.png Graphic file (type png)
+<use illustrations/Figure-12-3-1-BasicGates.png>
+Package pdftex.def Info: illustrations/Figure-12-3-1-BasicGates.png  used on in
+put line 56.
+(pdftex.def)             Requested size: 361.34999pt x 59.15912pt.
+) (./Graphs.tex [87 <./illustrations/Figure-12-3-1-BasicGates.png>] [88
+
+]
+Chapter 12.
+[89]
+Underfull \vbox (badness 6859) has occurred while \output is active []
+
+ [90]
+<illustrations/Figure-10-6-1-BridgesOfKoenigsberg.png, id=407, 1196.47pt x 566.
+115pt>
+File: illustrations/Figure-10-6-1-BridgesOfKoenigsberg.png Graphic file (type p
+ng)
+<use illustrations/Figure-10-6-1-BridgesOfKoenigsberg.png>
+Package pdftex.def Info: illustrations/Figure-10-6-1-BridgesOfKoenigsberg.png  
+used on input line 131.
+(pdftex.def)             Requested size: 361.34999pt x 170.97604pt.
+
+[91] [92 <./illustrations/Figure-10-6-1-BridgesOfKoenigsberg.png>]
+<illustrations/Figure-10-5-6-MohammedsScimitar.png, id=416, 762.85pt x 343.2825
+pt>
+File: illustrations/Figure-10-5-6-MohammedsScimitar.png Graphic file (type png)
+
+<use illustrations/Figure-10-5-6-MohammedsScimitar.png>
+Package pdftex.def Info: illustrations/Figure-10-5-6-MohammedsScimitar.png  use
+d on input line 208.
+(pdftex.def)             Requested size: 216.81pt x 97.56413pt.
+ [93 <./illustrations/Figure-10-5-6-MohammedsScimitar.png>] [94]) (./Trees.tex
+Chapter 13.
+[95
+
+] [96]) (./Probability.tex
+Chapter 14.
+[97
+
+] [98]) (./Computation.tex [99] [100
+
+]
+Chapter 15.
+[101] [102])
+runsystem(makeindex OutlineOfDiscreteMath.idx)...executed safely (allowed).
+
+ (./OutlineOfDiscreteMath.ind [103
+
+
+
+]) (./OutlineOfDiscreteMath.bbl
+[104]) [105
 
 ] (./OutlineOfDiscreteMath.aux)
 
@@ -1410,13 +1514,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8621 strings out of 492649
- 132250 string characters out of 6129622
- 209245 words of memory out of 5000000
- 12200 multiletter control sequences out of 15000+600000
- 96841 words of font info for 150 fonts, out of 8000000 for 9000
+ 8692 strings out of 492649
+ 134346 string characters out of 6129622
+ 209338 words of memory out of 5000000
+ 12233 multiletter control sequences out of 15000+600000
+ 99825 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,77p,2110b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,13n,77p,2110b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2018/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texl
@@ -1435,10 +1539,10 @@ ve/2018/texmf-dist/fonts/type1/public/cm-super/sfss2488.pfb></usr/local/texlive
 /2018/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2018/t
 exmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2018/texmf-di
 st/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on OutlineOfDiscreteMath.pdf (74 pages, 1508778 bytes).
+Output written on OutlineOfDiscreteMath.pdf (123 pages, 1864716 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
+ 517 PDF objects out of 1000 (max. 8388607)
+ 324 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
