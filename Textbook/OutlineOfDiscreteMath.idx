@@ -1,129 +1,129 @@
 \indexentry{proposition}{1}
-\indexentry{compound proposition}{1}
-\indexentry{logical connective}{1}
+\indexentry{compound proposition}{2}
+\indexentry{logical connective}{2}
 \indexentry{negation}{2}
 \indexentry{truth table}{2}
-\indexentry{conjunction}{2}
-\indexentry{disjunction}{2}
-\indexentry{exclusive OR}{2}
-\indexentry{implication}{2}
-\indexentry{antecedent}{2}
-\indexentry{conditional statement}{2}
-\indexentry{hypothesis}{2}
-\indexentry{premise}{2}
-\indexentry{conclusion}{2}
-\indexentry{consequent}{2}
-\indexentry{inverse}{3}
-\indexentry{converse}{3}
-\indexentry{contrapositive}{3}
-\indexentry{bi-conditional}{3}
-\indexentry{satisfiability}{4}
-\indexentry{bit string}{4}
-\indexentry{tautology}{4}
-\indexentry{contradiction}{4}
-\indexentry{logical equivalence}{4}
-\indexentry{predicate}{6}
-\indexentry{quantifier}{7}
-\indexentry{quantification}{7}
-\indexentry{universe of discourse}{7}
-\indexentry{domain}{7}
-\indexentry{universal quantification}{7}
-\indexentry{existential quantification}{8}
-\indexentry{existential quantifier}{8}
-\indexentry{binding}{9}
-\indexentry{argument form}{14}
-\indexentry{resolution}{16}
-\indexentry{fallacy}{17}
-\indexentry{proof by contraposition}{21}
-\indexentry{proof by contradiction}{22}
-\indexentry{truth set}{26}
-\indexentry{set equality}{27}
-\indexentry{empty set}{27}
-\indexentry{subset}{27}
-\indexentry{universal set}{28}
-\indexentry{empty set}{28}
-\indexentry{set union}{28}
-\indexentry{set intersection}{28}
-\indexentry{disjoint sets}{28}
-\indexentry{set difference}{28}
-\indexentry{symmetric difference}{29}
-\indexentry{Set Complement}{29}
-\indexentry{set cross product}{30}
-\indexentry{set cardinality}{30}
-\indexentry{powerset}{30}
-\indexentry{Fundamental Products of Sets}{31}
-\indexentry{partitions of a set}{31}
-\indexentry{multiset}{31}
-\indexentry{bag}{31}
-\indexentry{string}{31}
-\indexentry{Kleene Star}{32}
-\indexentry{function}{33}
-\indexentry{mapping}{33}
-\indexentry{transformation}{33}
-\indexentry{domain}{33}
-\indexentry{codomain}{33}
-\indexentry{preimage}{33}
-\indexentry{image}{33}
-\indexentry{range}{33}
-\indexentry{function equality}{33}
-\indexentry{function equality}{34}
-\indexentry{onto}{35}
-\indexentry{surjective}{35}
-\indexentry{one-to-one}{35}
-\indexentry{into}{35}
-\indexentry{injective}{35}
-\indexentry{one-to-one correspondence}{35}
-\indexentry{bijective}{35}
-\indexentry{inverse of a function}{35}
-\indexentry{function composition}{35}
-\indexentry{partial function}{39}
-\indexentry{sequence}{40}
-\indexentry{term}{40}
-\indexentry{geometric progression}{41}
-\indexentry{initial term}{41}
-\indexentry{common ratio}{41}
-\indexentry{geometric progression}{42}
-\indexentry{arithmetic progression}{42}
-\indexentry{summation}{43}
-\indexentry{binary relations}{47}
-\indexentry{divides}{48}
-\indexentry{reflexive relation}{48}
-\indexentry{symmetric relation}{48}
-\indexentry{antisymmetric}{48}
-\indexentry{anti-reflexive relation}{48}
-\indexentry{composition of relations}{48}
-\indexentry{closure}{50}
-\indexentry{poset}{51}
-\indexentry{partial order}{51}
-\indexentry{well-ordered set}{51}
-\indexentry{lexicographic order}{52}
-\indexentry{Haase diagram}{52}
-\indexentry{least upper bound}{53}
-\indexentry{lattice}{53}
-\indexentry{topological sort}{53}
-\indexentry{pseudocode}{55}
-\indexentry{congruence}{62}
-\indexentry{residue class}{62}
-\indexentry{congruence artihmetic}{63}
-\indexentry{congruence classes}{63}
-\indexentry{congruence arithmetic}{63}
-\indexentry{prime number}{63}
-\indexentry{greatest common divisor}{63}
-\indexentry{GCD}{63}
-\indexentry{least common multiple}{63}
-\indexentry{LCM}{63}
-\indexentry{Euler phi function}{64}
-\indexentry{B\IeC {\'e}zout's theorem}{65}
-\indexentry{Boolean variable}{85}
-\indexentry{Boolean expression}{85}
-\indexentry{Boolean function}{85}
-\indexentry{logic gate}{87}
-\indexentry{graph}{89}
-\indexentry{vertex}{89}
-\indexentry{edge}{89}
-\indexentry{simple graph}{89}
-\indexentry{multigraph}{89}
-\indexentry{directed graph}{89}
-\indexentry{digraph}{89}
-\indexentry{handshaking theorem}{90}
-\indexentry{bipartite graph}{90}
+\indexentry{conjunction}{3}
+\indexentry{disjunction}{3}
+\indexentry{exclusive OR}{3}
+\indexentry{implication}{3}
+\indexentry{antecedent}{3}
+\indexentry{conditional statement}{3}
+\indexentry{hypothesis}{3}
+\indexentry{premise}{3}
+\indexentry{conclusion}{3}
+\indexentry{consequent}{3}
+\indexentry{inverse}{4}
+\indexentry{converse}{4}
+\indexentry{contrapositive}{4}
+\indexentry{bi-conditional}{5}
+\indexentry{satisfiability}{6}
+\indexentry{bit string}{6}
+\indexentry{tautology}{6}
+\indexentry{contradiction}{6}
+\indexentry{logical equivalence}{6}
+\indexentry{predicate}{8}
+\indexentry{quantifier}{11}
+\indexentry{quantification}{11}
+\indexentry{universe of discourse}{11}
+\indexentry{domain}{11}
+\indexentry{universal quantification}{11}
+\indexentry{existential quantification}{12}
+\indexentry{existential quantifier}{12}
+\indexentry{binding}{14}
+\indexentry{argument form}{21}
+\indexentry{resolution}{24}
+\indexentry{fallacy}{24}
+\indexentry{proof by contraposition}{32}
+\indexentry{proof by contradiction}{33}
+\indexentry{truth set}{39}
+\indexentry{set equality}{40}
+\indexentry{empty set}{40}
+\indexentry{subset}{40}
+\indexentry{universal set}{41}
+\indexentry{empty set}{41}
+\indexentry{set union}{42}
+\indexentry{set intersection}{42}
+\indexentry{disjoint sets}{42}
+\indexentry{set difference}{42}
+\indexentry{symmetric difference}{43}
+\indexentry{Set Complement}{43}
+\indexentry{set cross product}{43}
+\indexentry{set cardinality}{45}
+\indexentry{powerset}{45}
+\indexentry{Fundamental Products of Sets}{46}
+\indexentry{partitions of a set}{46}
+\indexentry{multiset}{46}
+\indexentry{bag}{46}
+\indexentry{string}{47}
+\indexentry{Kleene Star}{47}
+\indexentry{function}{49}
+\indexentry{mapping}{49}
+\indexentry{transformation}{49}
+\indexentry{domain}{49}
+\indexentry{codomain}{49}
+\indexentry{preimage}{49}
+\indexentry{image}{49}
+\indexentry{range}{49}
+\indexentry{function equality}{50}
+\indexentry{function equality}{51}
+\indexentry{onto}{52}
+\indexentry{surjective}{52}
+\indexentry{one-to-one}{52}
+\indexentry{into}{52}
+\indexentry{injective}{52}
+\indexentry{one-to-one correspondence}{52}
+\indexentry{bijective}{52}
+\indexentry{inverse of a function}{52}
+\indexentry{function composition}{53}
+\indexentry{partial function}{59}
+\indexentry{sequence}{61}
+\indexentry{term}{61}
+\indexentry{geometric progression}{61}
+\indexentry{initial term}{61}
+\indexentry{common ratio}{61}
+\indexentry{geometric progression}{63}
+\indexentry{arithmetic progression}{63}
+\indexentry{summation}{65}
+\indexentry{binary relations}{72}
+\indexentry{divides}{72}
+\indexentry{reflexive relation}{73}
+\indexentry{symmetric relation}{73}
+\indexentry{antisymmetric}{73}
+\indexentry{anti-reflexive relation}{73}
+\indexentry{composition of relations}{73}
+\indexentry{closure}{76}
+\indexentry{poset}{78}
+\indexentry{partial order}{78}
+\indexentry{well-ordered set}{78}
+\indexentry{lexicographic order}{79}
+\indexentry{Haase diagram}{79}
+\indexentry{least upper bound}{81}
+\indexentry{lattice}{81}
+\indexentry{topological sort}{81}
+\indexentry{pseudocode}{84}
+\indexentry{congruence}{92}
+\indexentry{residue class}{93}
+\indexentry{congruence artihmetic}{94}
+\indexentry{congruence classes}{94}
+\indexentry{congruence arithmetic}{94}
+\indexentry{prime number}{94}
+\indexentry{greatest common divisor}{95}
+\indexentry{GCD}{95}
+\indexentry{least common multiple}{95}
+\indexentry{LCM}{95}
+\indexentry{Euler phi function}{95}
+\indexentry{B\IeC {\'e}zout's theorem}{96}
+\indexentry{Boolean variable}{127}
+\indexentry{Boolean expression}{127}
+\indexentry{Boolean function}{128}
+\indexentry{logic gate}{130}
+\indexentry{graph}{133}
+\indexentry{vertex}{133}
+\indexentry{edge}{133}
+\indexentry{simple graph}{133}
+\indexentry{multigraph}{133}
+\indexentry{directed graph}{133}
+\indexentry{digraph}{133}
+\indexentry{handshaking theorem}{134}
+\indexentry{bipartite graph}{135}
